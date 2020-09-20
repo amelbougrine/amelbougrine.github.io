@@ -1,0 +1,167 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+
+}
+.logo img {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+/*border: 0.3px solid #daa520;*/
+}
+.logo img:hover {
+    cursor: pointer;
+box-shadow: 0px 0px 15px #daa520;
+
+}
+.menu {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 1000;
+}
+.menu img {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+}
+.menu img:hover {
+cursor: pointer;
+box-shadow: 0px 0px 15px #daa520;
+
+}
+.container {
+    position: absolute;
+    top: 240px;
+    left: 70px;
+    word-spacing: 6px;
+    letter-spacing: 6px;
+    z-index: 1002;
+}
+.line {
+    width: 60px;
+    height: 4px;
+    background-color: #f8b712;
+    float: left;
+    margin-right: 10px;
+    margin-top: 11px;
+    box-shadow: 0px 0px 15px #daa520;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.hello {
+    position: relative;
+    left: -70px;
+}
+.hello h2 {
+    font-size: 22px;
+    font-weight: normal;
+    word-spacing: -3px;
+    letter-spacing: 2px;
+}
+.intreducton h1 {
+    font-size: 42px;
+    margin: 23px 0px;
+}
+.intreducton h6 {
+    font-size: 14px;
+    font-weight: normal;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+.goldenText {
+    color: #f8b712;
+}
+.explore {
+    margin-top: 40px;
+    width: 200px;
+    transition: transform 0.5s linear;
+}
+.explore:hover {
+    transform: translateX(20px);
+    cursor: pointer;
+}
+.explore h4 {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 10px;
+    color: #f8b712;
+}
+.frame {
+    position: relative;
+    top: 10vh;
+    width: 25%;
+    height: 80vh;
+    margin: 0 auto;
+    border: 4px solid #f8b712;
+    box-shadow: 0px 0px 15px #daa520;
+    z-index: 1000;
+}
+.frame2 {
+    position: relative;
+    top: 32vh;
+    left: -40px;
+    width: 90px;
+    height: 140px;
+    line-height: 89px;
+    background-color: #000000;
+    z-index: 1001;
+    box-shadow: 0px 0px 15px 15px #000000;
+}
+.photo {
+    position: fixed;
+    left: 45vw;
+    top: 0px;
+    z-index: 5;
+}
+.photo img {
+    width: 600px;
+    height: 100vh;
+}
+.pages ul {
+    list-style-type: none;
+    position: fixed;
+    top: 240px;
+    right: 50px;
+}
+li[class*="cercle"] {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 1.5px solid #f8b712;
+    z-index: 1000;
+}
+li[class*="cercle"] div {
+    width: 4px;
+    height: 4px;
+    margin: 0 auto;
+    margin-top: 4.5px;
+    border-radius: 50%;
+    background-color: #f8b712;
+}
+li[class*="cercle"]:hover {
+    box-shadow: 0px 0px 14px 3.5px #f5b923;
+    cursor: pointer;
+}
+.cercle1 {
+    box-shadow: 0px 0px 14px 3.5px #f5b923;
+}
+
+
