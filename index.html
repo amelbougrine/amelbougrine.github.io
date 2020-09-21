@@ -7,6 +7,7 @@
         <!-- <meta name="keywords" content=" demo" /> -->
         <meta name="author" content="Amel Bougrine" />
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -16,34 +17,54 @@
             <div class="menu">
                 <img src="images/menu.png"/>
             </div>
-            <div class="container">
-                <div class="hello">
-                    <div class="line"></div>
-                    <h2>HELLO, I AM AMEL</h2>
-                </div>
-                <div class="intreducton">
-                    <h1>I'M A <span class="goldenText">WEB</span> DEVELOPER</h1>
-                    <h6>Are you looking for a developer who works hard but stays humble ?</h6>
-                </div>
-                <div class="explore">
-                    <h4>EXPLORE &#62; </h4>
-                </div>
-            </div>
-            <div class="frame">
-                <div class="frame2"></div>
-            </div>
-            <div class="photo">
-                <img src="images/photo.png" alt="Amel Bougrine"/>
-            </div>
             <div class="pages">
                 <ul>
                     <li class="cercle1"><div></div></li>
-                    <li class="cercle2"><div></div></li>
-                    <li class="cercle3"><div></div></li>
-                    <li class="cercle4"><div></div></li>
-                    <li class="cercle5"><div></div></li>
+                    <li class="cercle2"></li>
+                    <li class="cercle3"></li>
+                    <li class="cercle4"></li>
+                    <li class="cercle5"></li>
                 </ul>
             </div>
+            <div class="container1">
+                <div class="textContainer" 
+                data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="700">
+                    <div class="hello">
+                        <div class="line"></div>
+                        <h2>HELLO, I AM AMEL</h2>
+                    </div>
+                    <div class="intreducton">
+                        <h1>I'M A <span class="goldenText">WEB</span> DEVELOPER</h1>
+                        <h6>Are you looking for a developer who works hard but stays humble ?</h6>
+                    </div>
+                    <div class="explore">
+                        <h4>EXPLORE &#62; </h4>
+                    </div>
+                    <div class="line long"></div>
+                    <div class="line down"></div>
+                </div>
+                <div class="frame"
+                data-aos="fade-zoom-in"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="1000">
+                    <div class="frame2"></div>
+                </div>
+                <div class="photo"
+                data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="800">
+                    <img src="images/photo.png"/>
+                </div>
+            </div>
         </main>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
