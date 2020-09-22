@@ -7,15 +7,23 @@
         <!-- <meta name="keywords" content=" demo" /> -->
         <meta name="author" content="Amel Bougrine" />
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <main>
             <div class="logo">
                 <img src="images/logo.png" alt="Logo"/>
             </div>
-            <div class="menu">
+            <div class="menuIcon" onclick="showMenu()">
                 <img src="images/menu.png"/>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Introduction</li>
+                    <li>About Me</li>
+                    <li>My Work</li>
+                    <li>Coding Challenges</li>
+                    <li>Contact</li>
+                </ul>
             </div>
             <div class="pages">
                 <ul>
@@ -27,11 +35,7 @@
                 </ul>
             </div>
             <div class="container1">
-                <div class="textContainer" 
-                data-aos="fade-right"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
-                data-aos-duration="700">
+                <div class="textContainer slideinLeft">
                     <div class="hello">
                         <div class="line"></div>
                         <h2>HELLO, I AM AMEL</h2>
@@ -46,25 +50,14 @@
                     <div class="line long"></div>
                     <div class="line down"></div>
                 </div>
-                <div class="frame"
-                data-aos="fade-zoom-in"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
-                data-aos-duration="1000">
+                <div class="frame zoomin">
                     <div class="frame2"></div>
                 </div>
-                <div class="photo"
-                data-aos="fade-left"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
-                data-aos-duration="800">
+                <div class="photo slideinRight1500">
                     <img src="images/photo.png"/>
                 </div>
             </div>
         </main>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
