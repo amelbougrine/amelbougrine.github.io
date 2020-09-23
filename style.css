@@ -12,6 +12,9 @@ main {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
+.container1 {
+    height: 665px;
+}
 .logo {
     position: fixed;
     top: 30px;
@@ -156,7 +159,7 @@ div[class*="long"] {
 }
 div[class*="down"] {
     width: 1px;
-    height: 230px;
+    height: 830px;
     margin-right: 0;
 }
 .frame {
@@ -184,7 +187,7 @@ div[class*="down"] {
     position: absolute;
     left: 45vw;
     top: 0px;
-    z-index: 5;
+    z-index: 1;
 }
 .photo img {
     width: 600px;
@@ -231,8 +234,8 @@ div[class*="slideinLeft"] {
     animation: 1s 1 alternate slideinLeft;
 }
 @keyframes slideinLeft {
-    from { opacity: 0; margin-left: -100px; }
-    to { opacity: 1; margin-left: 0px; }
+    from { opacity: 0;  }
+    to { opacity: 1;  }
 }
 div[class*="zoomIn"] {
     animation: 1s 1 alternate zoomIn;
@@ -245,38 +248,35 @@ div[class*="slideInUp"] {
     animation: 2s 1 alternate slideInUp;
 }
 @keyframes slideInUp {
-    from { opacity: 0; margin-bottom: -50px; }
-    to { opacity: 1; margin-bottom: 0px;}
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0px);}
 }
 div[class*="slideOut"] {
-    opacity: 0;
     animation: 2s 1 alternate slideOut;
-}
-div[class*="slideOut"] > *, div[class*="slideOut"] .explore {
-    cursor: default;
 }
 @keyframes slideOut {
     from { opacity: 1; margin-top: 0px; }
-    to { opacity: 0; margin-top: -600px; }
+    to { opacity: 0; margin-top: -665px; }
 }
 div[class*="1500"] {
     animation-duration: 1500ms;
 }
-/* div[class*="800"] {
-    animation-duration: 800ms;
+/* div[class*="2500"] {
+    animation-duration: 2500ms;
 } */
 /* ----------------------------------------------------------------------------- */
 .container2 {
     position: relative;
     left: 360px;
+    height: 665px;
+    z-index: 2;
 }
 .P2 {
-    display: block;
+    display: none;
 }
 .down600 {
-    height: 600px !important;
     position: relative;
-    bottom: 90px;
+    bottom: 320px;
 }
 div[class*="long600"] {
     width: 40px;
@@ -287,12 +287,11 @@ div[class*="long600"] {
 }
 .long6001 {
     width: 670px !important;
-    z-index: 1000;
 }
 .aboutMe {
     font-size: 70px;
     transform: rotate(-90deg);
-    color: #1a1919;
+    color: #313131;
     letter-spacing: 3px;
     padding-left: 100px;
     position: relative;
