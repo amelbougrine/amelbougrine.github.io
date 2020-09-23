@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
-body {
+body, main {
     overflow: hidden;
 }
 main {
@@ -45,12 +45,12 @@ main {
 }
 .menu {
     opacity: 0;
-    width: 185px;
-    height: 202px;
+    width: 0px;
+    height: 0px;
     position: absolute;
-    right: -170px;
+    right: 55px;
     top: 234px;
-    transition: all 1s;
+    transition: all 0.5s;
     z-index: 1000;
 }
 .menu ul {
@@ -58,8 +58,9 @@ main {
     padding-left: 0;
 }
 .menu ul li {
+    box-sizing: border-box;
+    overflow: hidden;
     margin-bottom: 18px;
-    width: 170px;
     font-size: 12px;
     padding: 6px;
     padding-left: 9px;
@@ -74,7 +75,9 @@ main {
     background-color: #000000;
 }
 .show {
-    opacity: 1;    
+    opacity: 1; 
+    width: 185px;
+    height: 202px;   
     right: 43px;
 }
 .textContainer {
@@ -134,26 +137,27 @@ main {
     50%  {left:30px;}
     100%  {left:0px;}
 }
-.explore:hover {
+.explore:hover, .myWork:hover {
     cursor: pointer;
 }
-.explore h4 {
+.explore h4, .myWork h4 {
     display: inline;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 10px;
     color: #f8b712;
 }
-.long {
+div[class*="long"] {
     width: 70px;
     height: 1px;
     margin-right: 0;
     margin-left: 20px;
     border-radius: 0%;
 }
-.down{
+div[class*="down"] {
     width: 1px;
     height: 230px;
+    margin-right: 0;
 }
 .frame {
     position: relative;
@@ -230,31 +234,80 @@ div[class*="slideinLeft"] {
     from { opacity: 0; margin-left: -100px; }
     to { opacity: 1; margin-left: 0px; }
 }
-div[class*="zoomin"] {
-    animation: 1s 1 alternate zoomin;
+div[class*="zoomIn"] {
+    animation: 1s 1 alternate zoomIn;
 }
-@keyframes zoomin {
+@keyframes zoomIn {
     from { opacity: 0; transform: scale(0.5); }
     to { opacity: 1; transform: scale(1);}
 }
-@keyframes showon {
-    from { opacity: 0; right: 0px; }
-    to { opacity: 1; right: 42px; }
+div[class*="slideInUp"] {
+    animation: 2s 1 alternate slideInUp;
 }
-@keyframes showoff {
-    from { opacity: 1; right: 42px; }
-    to { opacity: 0; right: 40px; }
+@keyframes slideInUp {
+    from { opacity: 0; margin-bottom: -50px; }
+    to { opacity: 1; margin-bottom: 0px;}
+}
+div[class*="slideOut"] {
+    opacity: 0;
+    animation: 2s 1 alternate slideOut;
+}
+div[class*="slideOut"] > *, div[class*="slideOut"] .explore {
+    cursor: default;
+}
+@keyframes slideOut {
+    from { opacity: 1; margin-top: 0px; }
+    to { opacity: 0; margin-top: -600px; }
 }
 div[class*="1500"] {
     animation-duration: 1500ms;
 }
-div[class*="800"] {
+/* div[class*="800"] {
     animation-duration: 800ms;
-}
-div[class*="Slideout"] {
-    animation-direction: reverse;
-}
+} */
 /* ----------------------------------------------------------------------------- */
+.container2 {
+    position: relative;
+    left: 360px;
+}
+.P2 {
+    display: block;
+}
+.down600 {
+    height: 600px !important;
+    position: relative;
+    bottom: 90px;
+}
+div[class*="long600"] {
+    width: 40px;
+    margin-left: 0px !important;
+    margin-right: 20px !important;
+    position: relative;
+    top: 510px
+}
+.long6001 {
+    width: 670px !important;
+    z-index: 1000;
+}
+.aboutMe {
+    font-size: 70px;
+    transform: rotate(-90deg);
+    color: #1a1919;
+    letter-spacing: 3px;
+    padding-left: 100px;
+    position: relative;
+    left: -690px;
+}
+.myWork {
+    float: left;
+    width: 210px;
+    position: relative;
+    top: 510px;
+    animation-name: move;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+    z-index: 1000;
+}
 
 
 
