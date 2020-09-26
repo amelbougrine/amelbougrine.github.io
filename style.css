@@ -326,8 +326,8 @@ div[class*="long60"] {
 /* ----------------------------------------------------------------------------- */
 .container3 {
     position: relative;
-    left: 75px;
-    top: 100px; /*same other containers*/
+    left: 100px;
+    top: 80px; /*same other containers*/
     height: 665px;
     z-index: 2;
 }
@@ -335,9 +335,40 @@ div[class*="long60"] {
     width: 1400px !important;
     left: -750px;
 }
+.projects {
+    width: 780px;
+    height: 480px;
+    padding: 0;
+}
 .projectList {
-    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
     height: 500px;
+    top: -20px;
+    float: left;
+}
+.project1, .project2, .project3 {
+    width: 200px;
+    height: 100px;
+}
+.project1 {
+    background-color: #1a1919d5;
+}
+.Pr1, .Pr2, .Pr3 {
+    position: relative;
+    float: left;
+    width: 80%;
+    height: 100%;
+    background-color: #4d3737d5;
+    text-align: center;
+    line-height: 100px;
+}
+.projectDetails {
+    width: 700px;
+    height: 480px;
+    position: relative;
+    left: 200px;
     background-color: #1a1919d5;
 }
 .codingChallenge {
