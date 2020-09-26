@@ -106,7 +106,7 @@ main {
     position: relative;
     left: -70px;
 }
-.hello h2, .textAboutMe h4 {
+.hello h2, .textAboutMe h3 {
     font-size: 22px;
     font-weight: normal;
     word-spacing: -3px;
@@ -131,6 +131,8 @@ main {
     margin-top: 2px;
     width: 200px;
     position: relative;
+}
+.move {
     animation-name: move;
     animation-duration: 2.3s;
     animation-iteration-count: infinite;
@@ -140,10 +142,10 @@ main {
     50%  {left:30px;}
     100%  {left:0px;}
 }
-.explore:hover, .myWork:hover {
+.explore:hover, .myWork:hover, .codingChallenge:hover {
     cursor: pointer;
 }
-.explore h4, .myWork h4 {
+.explore h4, .myWork h4, .codingChallenge h4 {
     display: inline;
     font-size: 14px;
     font-weight: normal;
@@ -234,8 +236,8 @@ div[class*="slideinLeft"] {
     animation: 1s 1 alternate slideinLeft;
 }
 @keyframes slideinLeft {
-    from { opacity: 0;  }
-    to { opacity: 1;  }
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1;  transform: translateX(0px); }
 }
 div[class*="zoomIn"] {
     animation: 1s 1 alternate zoomIn;
@@ -274,18 +276,18 @@ div[class*="1500"] {
 .P2 {
     display: none;
 }
-.down600 {
+.down60 {
     position: relative;
     bottom: 320px;
 }
-div[class*="long600"] {
+div[class*="long60"] {
     width: 40px;
     margin-left: 0px !important;
     margin-right: 20px !important;
-    position: relative;
-    top: 510px
+    position: relative;    /* absolut    ------ */
+    top: 510px;
 }
-.long6001 {
+.long601 {
     width: 670px !important;
 }
 .aboutMe {
@@ -295,23 +297,61 @@ div[class*="long600"] {
     letter-spacing: 3px;
     padding-left: 100px;
     position: relative;
-    left: -690px;
+    left: -710px;
 }
 .myWork {
     float: left;
     width: 210px;
     position: relative;
     top: 510px;
-    animation-name: move;
-    animation-duration: 2.3s;
-    animation-iteration-count: infinite;
     z-index: 1000;
 }
 .textAboutMe {
-    width: 400px;
-    height: 600px;
-    margin-left: 20px;
+    margin-left: 35px;
+    position: relative;
+    top: 70px;
 }
+.textAboutMe h3 {
+    font-weight: bold;
+    word-spacing: 0px;
+}
+.textAboutMe h6 {
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    width: 360px;
+    margin: 20px 0;
+}
+/* ----------------------------------------------------------------------------- */
+.container3 {
+    position: relative;
+    left: 75px;
+    top: 100px; /*same other containers*/
+    height: 665px;
+    z-index: 2;
+}
+.long602 {
+    width: 1400px !important;
+    left: -750px;
+}
+.projectList {
+    width: 350px;
+    height: 500px;
+    background-color: #1a1919d5;
+}
+.codingChallenge {
+    float: left;
+    width: 350px;
+    position: relative;
+    top: 500px;
+    margin-left: 665px;
+}
+
+
+
+
+
 #text:hover { 
     animation: effect linear 1s; 
 } 
