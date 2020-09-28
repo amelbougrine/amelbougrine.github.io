@@ -17,3 +17,14 @@ function nextPage () {
         menu.classList.remove("show");
     }
 }
+// show project
+const detail1 = `<div class="test"> <img src="images/image.png"/> <button>click here</button> </div>`;
+const detail2 = "<div>Project2</div>";
+const detail3 = "<div>Project3</div>";
+const detail4 = "<div>Project4</div>";
+const detail5 = "<div>Project5</div>";
+const detail6 = "<div>Project6</div>";
+const detailArray = [detail1, detail2, detail3, detail4, detail5, detail6];
+function showProject(num) {
+    document.querySelector(".projectText").innerHTML = detailArray[num-1];
+}
