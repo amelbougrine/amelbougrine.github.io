@@ -17,8 +17,25 @@ function nextPage () {
         menu.classList.remove("show");
     }
 }
+function nextPage2 () {
+    document.querySelectorAll(".P3").forEach(element => {
+        element.style.display= "block";
+    });
+    document.querySelector(".P2").classList.add("slideOutLeft");
+    document.querySelector(".photo").classList.add("slideOutLeft2500");
+    
+    setTimeout( () => {
+        document.querySelector(".photo").classList.add("P2");
+        document.querySelectorAll(".P2").forEach(element => {
+            element.style.display= "none";
+        });
+    }, 2000);
+    if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+    }
+}
 // show project
-const detail1 = `<div class="test"> <img src="images/image.png"/> <button>click here</button> </div>`;
+const detail1 = `<div class="test"> <img src="images/img1.gif"/> <button>click here</button> </div>`;
 const detail2 = "<div>Project2</div>";
 const detail3 = "<div>Project3</div>";
 const detail4 = "<div>Project4</div>";
