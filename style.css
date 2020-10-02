@@ -142,10 +142,10 @@ main {
     50%  {left:30px;}
     100%  {left:0px;}
 }
-.explore:hover, .myWork:hover, .codingChallenge:hover {
+.explore:hover, .myWork:hover, .codingChallenge:hover, .contact:hover {
     cursor: pointer;
 }
-.explore h4, .myWork h4, .codingChallenge h4 {
+.explore h4, .myWork h4, .codingChallenge h4, .contact h4 {
     display: inline;
     font-size: 14px;
     font-weight: normal;
@@ -225,13 +225,21 @@ li[class*="cercle"]:hover {
     cursor: pointer;
 }
 /* -------------------------------- Animations --------------------------------  */
-div[class*="slideinRight"] {
-    animation: 1s 1 alternate slideinRight;
+div[class*="slideinPhoto"] {
+    animation: 1.5s 1 alternate slideinPhoto;
 }
-@keyframes slideinRight {
+@keyframes slideinPhoto {
     from { opacity: 0; margin-left: 100px; }
     to { opacity: 1; margin-left: 0px; }
 }
+div[class*="slideoutPhoto"] {
+    animation: 2s 1 alternate slideoutPhoto;
+}
+@keyframes slideoutPhoto {
+    from { opacity: 1; margin-left: 0px; }
+    to { opacity: 0; margin-left: -1190px; }
+}f
+/*----*/
 div[class*="slideinLeft"] {
     animation: 1s 1 alternate slideinLeft;
 }
@@ -239,12 +247,21 @@ div[class*="slideinLeft"] {
     from { opacity: 0; transform: translateX(-100px); }
     to { opacity: 1;  transform: translateX(0px); }
 }
+/*----*/
 div[class*="zoomIn"] {
     animation: 1s 1 alternate zoomIn;
 }
 @keyframes zoomIn {
     from { opacity: 0; transform: scale(0.5); }
     to { opacity: 1; transform: scale(1);}
+}
+/*--P1-P2------P3-P4--*/
+div[class*="slideOutTop"] {
+    animation: 2s 1 alternate slideOutTop;
+}
+@keyframes slideOutTop {
+    from { opacity: 1; transform: translateY(0px); }
+    to { opacity: 0; transform: translateY(-665px); }
 }
 div[class*="slideInUp"] {
     animation: 2s 1 alternate slideInUp;
@@ -253,43 +270,34 @@ div[class*="slideInUp"] {
     from { opacity: 0; transform: translateY(50px); }
     to { opacity: 1; transform: translateY(0px);}
 }
-div[class*="slideOut"] {
-    animation: 2s 1 alternate slideOut;
+div[class*="slideInUp665"] {
+    animation: 2s 1 alternate slideInUp;
 }
-@keyframes slideOut {
-    from { opacity: 1; margin-top: 0px; }
-    to { opacity: 0; margin-top: -665px; }
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(665px); }
+    to { opacity: 1; transform: translateY(0px);}
 }
+/*--P2-P3--*/
 div[class*="slideOutLeft"] {
     animation: 2s 1 alternate slideOutLeft;
 }
 @keyframes slideOutLeft {
-    from { opacity: 1; margin-left: 0px; }
-    to { opacity: 0; margin-left: -880px; }
-}
-div[class*="slideOutTop"] {
-    animation: 2s 1 alternate slideOutTop;
-}
-@keyframes slideOutTop {
-    from { opacity: 1; margin-top: 0px; }
-    to { opacity: 0; margin-top: -665px; }
+    from { opacity: 1; transform: translateX(0px) }
+    to { opacity: 0; transform: translateX(-1090px) }
 }
 div[class*="slideinright"] {
-    animation: 1s 1 alternate slideinright;
+    animation: 2s 1 alternate slideinright;
 }
 @keyframes slideinright {
-    from { opacity: 0; transform: translateX(880px) }
+    from { opacity: 0; transform: translateX(1090px) }
     to { opacity: 1; transform: translateX(0px) }
 }
-div[class*="1500"] {
-    animation-duration: 1500ms;
-}
+/*----*/
 div[class*="2500"] {
     animation-duration: 2.5s;
 }
 /* ----------------------------------------------------------------------------- */
 .container2 {
-    display: none;
     position: relative;
     left: 360px;
     height: 665px;
@@ -306,11 +314,12 @@ div[class*="long60"] {
     width: 40px;
     margin-left: 0px !important;
     margin-right: 20px !important;
-    position: relative;    /* absolut    ------ */
+    position: absolute;    /* absolut    ------ */
     top: 570px;
 }
 .long601 {
-    width: 670px !important;
+    left: 260px;
+    width: 1090px !important;
 }
 .about_Me {
     font-size: 80px;
@@ -326,8 +335,9 @@ div[class*="long60"] {
 .myWork {
     float: left;
     width: 210px;
-    position: relative;
+    position: absolute;
     top: 570px;
+    margin-left: 60px;
     z-index: 1000;
 }
 .textAboutMe {
@@ -350,12 +360,15 @@ div[class*="long60"] {
 }
 /* ----------------------------------------------------------------------------- */
 .container3 {
-    display: none;
-    position: relative;
+    position: absolute;
     left: 75px;
     top: 100px; /*same other containers*/
     height: 665px;
-    z-index: 2;
+    width: 1090px;
+    z-index: 3;
+}
+.P3 {
+    display: none;
 }
 .my_Work {
     font-size: 80px;
@@ -363,26 +376,38 @@ div[class*="long60"] {
     color: #313131ea;
     letter-spacing: 3px;
     position: absolute;
-    top: 420px;
-    z-index: 1;
+    top: 400px;
 }
 .long602 {
-    width: 1400px !important;
-    left: -750px;
+    width: 1075px !important;
+    top: 492px !important;
+    left: -500px;
+}
+.long603 {
+    width: 60px !important;
+    top: 492px !important;
+    right: 30px;
+    margin-right: 0px !important;
+}
+.down601 {
+    position: relative;
+    top: 492px;
+    float: right;
+    right: 49px !important;
+    height: 260px !important;
 }
 .codingChallenge {
     float: left;
-    width: 350px;
-    position: relative;
-    top: 500px;
-    margin-left: 665px;
+    width: 360px;
+    position: absolute;
+    top: 494px;
+    margin-left: 590px;
 }
 .projectsContainer {
     width: 1070px;
     height: 460px;
     margin-left: 20px;
     position: absolute;
-    /* background-color: #000000; */
 }
 .projectText {
     box-sizing: border-box;
@@ -390,18 +415,14 @@ div[class*="long60"] {
     height: 460px;
     margin: 0px 20px;
     display: inline-block;
-    /* background-color: #330303; */
     text-align: center;
     line-height: 420px;
-    /* border: 4px solid #f8b712;
-    box-shadow: 0px 0px 15px #daa520; */
 }
 .projects {
     width: 500px;
     height: 460px;
     float: right;
     position: relative;
-    /* background-color: #473535; */
 }
 div[class*="Pr"] {
     margin: 4px;
@@ -425,7 +446,8 @@ div[class*="Pr"]:hover {
 }
 div[class*="Pr"] h3 {
     padding: 3px 0;
-    background-color: #141414c0;
+    color: #1a1919;
+    background-color: #daa520;
 }
 .Pr3 h3 {
     margin-top: 38%;
@@ -497,4 +519,58 @@ div[class*="Pr"] h3 {
 }
 .test button {
     display: block;
+}
+/* ------------------------------------------------------------------------*/
+.container4 {
+    position: absolute;
+    left: 75px;
+    top: 100px;
+    height: 665px;
+    width: 1090px;
+    z-index: 4;
+}
+.P4 {
+    display: none;
+}
+.coding_Challenge {
+    font-size: 80px;
+    font-weight: 600;
+    color: #313131ea;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+.long604 {
+    width: 470px !important;
+    top: 90px !important;
+    left: -500px;
+}
+.long605 {
+    width: 850px !important;
+    top: 90px !important;
+    right: 30px;
+    margin-right: 0px !important;
+}
+.down603 {
+    position: relative;
+    top: -170px;
+    float: right;
+    right: 49px !important;
+    height: 261px !important;
+}
+.contact {
+    float: right;
+    width: 250px;
+    position: absolute;
+    top: 92px;
+    margin-left: -15px;
+    z-index: 5;
+}
+.codingContainer {
+    width: 1070px;
+    height: 370px;
+    margin: 20px;
+    position: absolute;
+    top: 130px;
 }

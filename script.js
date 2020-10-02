@@ -2,9 +2,9 @@ const menu = document.querySelector(".menu")
 function showMenu () {
     menu.classList.toggle("show");
 }
-function nextPage () {
-    document.querySelector(".textContainer").classList.add("slideOut");
-    document.querySelector(".frame").classList.add("slideOut");
+function nextPage1 () {
+    document.querySelector(".textContainer").classList.add("slideOutTop");
+    document.querySelector(".frame").classList.add("slideOutTop");
     document.querySelectorAll(".P2").forEach(element => {
         element.style.display= "block";
     });
@@ -18,15 +18,30 @@ function nextPage () {
     }
 }
 function nextPage2 () {
+    document.querySelector(".P2").classList.add("slideOutLeft");
+    document.querySelector(".photo").classList.add("slideoutPhoto");
     document.querySelectorAll(".P3").forEach(element => {
         element.style.display= "block";
     });
-    document.querySelector(".P2").classList.add("slideOutLeft");
-    document.querySelector(".photo").classList.add("slideOutLeft2500");
-    
     setTimeout( () => {
         document.querySelector(".photo").classList.add("P2");
         document.querySelectorAll(".P2").forEach(element => {
+            element.style.display= "none";
+        });
+    }, 1000);
+    if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+    }
+}
+function nextPage3 () {
+    document.querySelectorAll(".P3").forEach(element => {
+        element.classList.add("slideOutTop");
+    });
+    document.querySelectorAll(".P4").forEach(element => {
+        element.style.display= "block";
+    });
+    setTimeout( () => {
+        document.querySelectorAll(".P3").forEach(element => {
             element.style.display= "none";
         });
     }, 2000);
