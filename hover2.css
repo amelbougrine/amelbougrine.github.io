@@ -2,31 +2,42 @@
   --offset: 1rem;
 }
 
-@media (min-width: 40em) {
+.codingContainer, codingContainer:before, codingContainer:after {
+  box-sizing: border-box;
+}
+
+@media (min-width: 80em) {
   .codingContainer {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 }
+.grid img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
+}
+
+.grid a {
+  display: block;
+  height: 100%;
+}
+
 .grid {
   display: grid;
-  grid-gap: 20px;
-  padding: 20px;
-  background-color: #99886f;
+  grid-gap: 0;
   overflow: hidden;
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 985px;
-  height: 320px;
+  height: 100%;
 }
 .grid li {
   position: relative;
-}
-.grid li img {
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 .grid li:hover ~ li:last-child:after,
 .grid li:last-child:hover:after,
@@ -57,22 +68,22 @@
   -webkit-backdrop-filter: grayscale(100%) blur(2px);
 }
 .grid li:nth-child(1):hover ~ li:last-child:after {
-  background: #b5a1b7;
+  background: #5328ee;
 }
 .grid li:nth-child(2):hover ~ li:last-child:after {
-  background: #97a0c4;
+  background: #be2525;
 }
 .grid li:nth-child(3):hover ~ li:last-child:after {
-  background: #daa384;
+  background: #d3a730;
 }
 .grid li:nth-child(4):hover ~ li:last-child:after {
-  background: #A5D6A7;
+  background: #3acf3f;
 }
 .grid li:nth-child(5):hover ~ li:last-child:after {
-  background: #6c4331;
+  background: #2636c4;
 }
 .grid li:last-child:hover:after {
-  background: #555;
+  background: #c71dab;
 }
 
 .grid {
@@ -109,31 +120,31 @@
   transform: translate3d(0%, 0%, 0);
 }
 
-@media (max-width: 60em) {
+@media (max-width: 100em) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 33.3333333333%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
   }
   .grid li:last-child:after,
 .grid li:last-child:before {
     left: 0%;
-    transform: translate3d(-50%, -100%, 0);
+    transform: translate3d(-100%, -50%, 0);
   }
   .grid li:nth-child(1):hover ~ li:last-child:after,
 .grid li:nth-child(1):hover ~ li:last-child:before {
-    transform: translate3d(-100%, -200%, 0);
+    transform: translate3d(-200%, -100%, 0);
   }
   .grid li:nth-child(2):hover ~ li:last-child:after,
 .grid li:nth-child(2):hover ~ li:last-child:before {
-    transform: translate3d(0%, -200%, 0);
+    transform: translate3d(-100%, -100%, 0);
   }
   .grid li:nth-child(3):hover ~ li:last-child:after,
 .grid li:nth-child(3):hover ~ li:last-child:before {
-    transform: translate3d(-100%, -100%, 0);
+    transform: translate3d(0%, -100%, 0);
   }
   .grid li:nth-child(4):hover ~ li:last-child:after,
 .grid li:nth-child(4):hover ~ li:last-child:before {
-    transform: translate3d(0%, -100%, 0);
+    transform: translate3d(-200%, 0%, 0);
   }
   .grid li:nth-child(5):hover ~ li:last-child:after,
 .grid li:nth-child(5):hover ~ li:last-child:before {

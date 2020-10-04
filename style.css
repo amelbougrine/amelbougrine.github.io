@@ -32,6 +32,7 @@ main {
 }
 .logo img:hover {
     cursor: pointer;
+    /* filter: drop-shadow(0px 0px 15px #daa520); */
     box-shadow: 0px 0px 15px #daa520;
 }
 .menuIcon {
@@ -147,10 +148,10 @@ main {
     50%  {left:30px;}
     100%  {left:0px;}
 }
-.explore:hover, .myWork:hover, .codingChallenge:hover, .contact:hover {
+.explore:hover, .myWork:hover, .codingChallenge:hover, .contact:hover, .back_to_top:hover  {
     cursor: pointer;
 }
-.explore h4, .myWork h4, .codingChallenge h4, .contact h4 {
+.explore h4, .myWork h4, .codingChallenge h4, .contact h4, .back_to_top h4 {
     display: inline;
     font-size: 14px;
     font-weight: normal;
@@ -296,6 +297,21 @@ div[class*="slideinright"] {
 }
 @keyframes slideinright {
     from { opacity: 0; transform: translateX(1090px) }
+    to { opacity: 1; transform: translateX(0px) }
+}
+/*--P4-P5--*/
+div[class*="slideOutRight"] {
+    animation: 2s 1 alternate slideOutRight;
+}
+@keyframes slideOutRight {
+    from { opacity: 1; transform: translateX(0px) }
+    to { opacity: 0; transform: translateX(1090px) }
+}
+div[class*="slideleft"] {
+    animation: 2s 1 alternate slideleft;
+}
+@keyframes slideleft {
+    from { opacity: 0; transform: translateX(-1090px) }
     to { opacity: 1; transform: translateX(0px) }
 }
 /*----*/
@@ -576,6 +592,61 @@ div[class*="Pr"] h3 {
     z-index: 5;
 }
 .codingContainer {
+    width: 985px;
+    height: 350px;
+    margin: 20px;
+    position: absolute;
+    top: 130px;
+    left: 35px;
+}
+/* ------------------------------------------------------------------------*/
+.container5 {
+    position: absolute;
+    left: 75px;
+    top: 100px;
+    height: 665px;
+    width: 1090px;
+    z-index: 4;
+}
+.P5 {
+    display: none;
+}
+._contact {
+    font-size: 80px;
+    font-weight: 600;
+    color: #313131ea;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+.long606 {
+    width: 470px !important;
+    top: 90px !important;
+    left: -500px;
+}
+.long607 {
+    width: 850px !important;
+    top: 90px !important;
+    right: 30px;
+    margin-right: 0px !important;
+}
+.down604 {
+    position: relative;
+    top: -170px;
+    float: right;
+    right: 49px !important;
+    height: 261px !important;
+}
+.back_to_top {
+    float: right;
+    width: 250px;
+    position: absolute;
+    top: 92px;
+    margin-left: -15px;
+    z-index: 5;
+}
+.contactContainer {
     width: 985px;
     height: 350px;
     margin: 20px;

@@ -49,6 +49,22 @@ function nextPage3 () {
         menu.classList.remove("show");
     }
 }
+function nextPage4 () {
+    document.querySelectorAll(".P4").forEach(element => {
+        element.classList.add("slideOutRight");
+    });
+    document.querySelectorAll(".P5").forEach(element => {
+        element.style.display= "block";
+    });
+    setTimeout( () => {
+        document.querySelectorAll(".P4").forEach(element => {
+            element.style.display= "none";
+        });
+    }, 2000);
+    if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+    }
+}
 // show project
 const detail1 = `<div class="test"> <img src="images/img1.gif"/> <button>click here</button> </div>`;
 const detail2 = "<div>Project2</div>";
