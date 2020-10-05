@@ -305,13 +305,13 @@ div[class*="slideOutRight"] {
 }
 @keyframes slideOutRight {
     from { opacity: 1; transform: translateX(0px) }
-    to { opacity: 0; transform: translateX(1090px) }
+    to { opacity: 0; transform: translateX(1290px) }
 }
 div[class*="slideleft"] {
     animation: 2s 1 alternate slideleft;
 }
 @keyframes slideleft {
-    from { opacity: 0; transform: translateX(-1090px) }
+    from { opacity: 0; transform: translateX(-1290px) }
     to { opacity: 1; transform: translateX(0px) }
 }
 /*----*/
@@ -618,24 +618,24 @@ div[class*="Pr"] h3 {
     letter-spacing: 3px;
     position: absolute;
     top: 0px;
-    left: 250px;
+    left: 590px;
 }
 .long606 {
-    width: 470px !important;
+    width: 40px !important;
     top: 90px !important;
-    left: -500px;
+    right: 770px;
 }
 .long607 {
-    width: 850px !important;
+    width: 678px !important;
     top: 90px !important;
-    right: 30px;
+    right: -200px;
     margin-right: 0px !important;
 }
 .down604 {
     position: relative;
     top: -170px;
-    float: right;
-    right: 49px !important;
+    float: left;
+    left: 260px !important;
     height: 261px !important;
 }
 .back_to_top {
@@ -643,14 +643,14 @@ div[class*="Pr"] h3 {
     width: 250px;
     position: absolute;
     top: 92px;
-    margin-left: -15px;
+    margin-left: 319px;
     z-index: 5;
 }
 .contactContainer {
-    width: 985px;
-    height: 350px;
+    width: 1085px;
+    height: 450px;
     margin: 20px;
     position: absolute;
     top: 130px;
-    left: 35px;
+    left: 0px;
 }

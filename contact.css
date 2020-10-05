@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b-1 {
+  background: url("images/logo1.png") no-repeat 100% 50%;
+}
+
+.b-2 {
+  background: url("images/logo2.png") no-repeat 100% 50%;
+}
+
+.b-3 {
+  background: url("images/logo3.png") no-repeat 100% 50%;
+}
+
+.b-4 {
+  background: url("images/logo4.png") no-repeat 100% 50%;
+}
+
+.badge {
+  display: block;
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 80px;
+  cursor: pointer;
+  background-size: 120%;
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.badge:hover {
+  box-shadow: 0px 0rem 1.5rem #daa520;
+  background-position: 0% 50%;
+}
+.badge:hover .text {
+  transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: rgba(218, 165, 32, 0.5);
+  width: 10rem;
+  letter-spacing: 0.7rem;
+  line-height: 10rem;
+  height: 10rem;
+  margin-top: -5rem;
+  margin-left: -5rem;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+.badge .text {
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  left: 50%;
+  top: 50%;
+  margin-top: -2.5rem;
+  margin-left: -2.5rem;
+  font-size: 1rem;
+  font-family: Raleway, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: #000;
+  border-radius: 50%;
+  background: #daa520;
+  transform: rotate(-180deg) translate(-5rem) rotate(180deg);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+/*# sourceMappingURL=contact.css.map */
