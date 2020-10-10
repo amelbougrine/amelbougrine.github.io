@@ -13,7 +13,7 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 .container1 {
-    display: none;
+    /* display: none; */
     position: absolute;
     height: 665px;
     width: 100%;
@@ -23,6 +23,7 @@ main {
     position: fixed;
     top: 30px;
     left: 70px;
+    z-index: 1000;
 }
 .logo img {
     width: 35px;
@@ -31,9 +32,8 @@ main {
     padding: 0;
 }
 .logo img:hover {
-    cursor: pointer;
-    /* filter: drop-shadow(0px 0px 15px #daa520); */
     box-shadow: 0px 0px 15px #daa520;
+    cursor: pointer;
 }
 .menuIcon {
     position: fixed;
@@ -192,7 +192,7 @@ div[class*="down"] {
     box-shadow: 0px 0px 15px 15px #000000;
 }
 .photo {
-    display: none;
+    display: block;
     position: fixed;
     left: 45vw;
     top: 0px;
@@ -554,7 +554,7 @@ div[class*="Pr"] h3 {
     z-index: 4;
 }
 .P4 {
-    display: block;
+    display: none;
 }
 .coding_Challenge {
     font-size: 80px;
