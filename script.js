@@ -2,6 +2,12 @@ const menu = document.querySelector(".menu")
 function showMenu () {
     menu.classList.toggle("show");
 }
+const circle1 = document.querySelector(".circle1");
+const circle2 = document.querySelector(".circle2");
+const circle3 = document.querySelector(".circle3");
+const circle4 = document.querySelector(".circle4");
+const circle5 = document.querySelector(".circle5");
+
 function nextPage1 () {
     document.querySelector(".textContainer").classList.add("slideOutTop");
     document.querySelector(".frame").classList.add("slideOutTop");
@@ -10,8 +16,10 @@ function nextPage1 () {
     });
     setTimeout( () => {
         document.querySelectorAll(".P1").forEach(element => {
-            element.style.display= "none";
+            element.style.display = "none";
         });
+        circle1.innerHTML = "";
+        circle2.innerHTML = "<div></div>";
     }, 2000);
     if (menu.classList.contains("show")) {
         menu.classList.remove("show");
@@ -28,6 +36,8 @@ function nextPage2 () {
         document.querySelectorAll(".P2").forEach(element => {
             element.style.display= "none";
         });
+        circle2.innerHTML = "";
+        circle3.innerHTML = "<div></div>";
     }, 1000);
     if (menu.classList.contains("show")) {
         menu.classList.remove("show");
@@ -44,6 +54,8 @@ function nextPage3 () {
         document.querySelectorAll(".P3").forEach(element => {
             element.style.display= "none";
         });
+        circle3.innerHTML = "";
+        circle4.innerHTML = "<div></div>";
     }, 2000);
     if (menu.classList.contains("show")) {
         menu.classList.remove("show");
@@ -60,6 +72,8 @@ function nextPage4 () {
         document.querySelectorAll(".P4").forEach(element => {
             element.style.display= "none";
         });
+        circle4.innerHTML = "";
+        circle5.innerHTML = "<div></div>";
     }, 2000);
     if (menu.classList.contains("show")) {
         menu.classList.remove("show");

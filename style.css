@@ -32,7 +32,7 @@ main {
     padding: 0;
 }
 .logo img:hover {
-    box-shadow: 0px 0px 15px #daa520;
+    filter: drop-shadow(0 0 0.5rem #ffffff);
     cursor: pointer;
 }
 .menuIcon {
@@ -49,7 +49,7 @@ main {
 }
 .menuIcon img:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 15px #daa520;
+    filter: drop-shadow(0 0 0.5rem #ffffff);
 }
 .menu {
     opacity: 0;
@@ -210,7 +210,7 @@ div[class*="down"] {
     right: 50px;
     z-index: 1010;
 }
-li[class*="cercle"] {
+li[class*="circle"] {
     width: 12px;
     height: 12px;
     margin-bottom: 30px;
@@ -218,7 +218,7 @@ li[class*="cercle"] {
     border: 1px solid #f8b712;
     z-index: 1000;
 }
-li[class*="cercle"] div {
+li[class*="circle"] div {
     width: 4px;
     height: 4px;
     margin: 0 auto;
@@ -227,7 +227,7 @@ li[class*="cercle"] div {
     border: 2px solid #f8b712;
     background-color: #f8b712;
 }
-li[class*="cercle"]:hover {
+li[class*="circle"]:hover {
     box-shadow: 0px 0px 15px 2px#daa520;
     cursor: pointer;
 }
