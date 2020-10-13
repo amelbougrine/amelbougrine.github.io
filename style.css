@@ -346,6 +346,7 @@ div[class*="long60"] {
     width: 1090px !important;
 }
 .about_Me {
+    cursor: default;
     font-size: 80px;
     font-weight: 600;
     transform: rotate(-90deg);
@@ -395,6 +396,7 @@ div[class*="long60"] {
     display: none;
 }
 .my_Work {
+    cursor: default;
     font-size: 80px;
     font-weight: 600;
     color: #313131ea;
@@ -557,6 +559,7 @@ div[class*="Pr"] h3 {
     display: none;
 }
 .coding_Challenge {
+    cursor: default;
     font-size: 80px;
     font-weight: 600;
     color: #313131ea;
@@ -612,6 +615,7 @@ div[class*="Pr"] h3 {
     display: none;
 }
 ._contact {
+    cursor: default;
     font-size: 80px;
     font-weight: 600;
     color: #313131ea;
