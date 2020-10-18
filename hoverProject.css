@@ -134,7 +134,6 @@
 .ehover10 p.icon-links a span::before {
 	display: inline-block;
 	padding: 8px 10px;
-	speak: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

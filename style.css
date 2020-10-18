@@ -139,11 +139,10 @@ main {
     position: relative;
 }
 .move {
-    animation-name: move;
-    animation-duration: 2.3s;
-    animation-iteration-count: infinite;
+    animation: 2.3s infinite moveTr;
+
 }
-@keyframes move {
+@keyframes moveTr {
     0%   {left:0px;}
     50%  {left:30px;}
     100%  {left:0px;}
@@ -248,7 +247,7 @@ div[class*="slideoutPhoto"] {
 }
 @keyframes slideoutPhoto {
     from { opacity: 1; margin-left: 0px; }
-    to { opacity: 0; margin-left: -1190px; }
+    to { opacity: 0; margin-left: -1290px; }
 }
 /*----*/
 div[class*="slideinLeft"] {
@@ -263,7 +262,7 @@ div[class*="zoomIn"] {
     animation: 1s 1 alternate zoomIn;
 }
 @keyframes zoomIn {
-    from { opacity: 0; transform: scale(0.5); }
+    from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1);}
 }
 /*--P1-P2------P3-P4--*/
@@ -317,6 +316,21 @@ div[class*="slideleft"] {
 @keyframes slideleft {
     from { opacity: 0; transform: translateX(-1290px) }
     to { opacity: 1; transform: translateX(0px) }
+}
+/*--P5-P1--*/
+div[class*="slideOutDown"] {
+    animation: 2s 1 alternate slideOutDown;
+}
+@keyframes slideOutDown {
+    from { opacity: 1; transform: translateY(0px); }
+    to { opacity: 0; transform: translateY(665px);}
+}
+div[class*="slideInDown"] {
+    animation: 2s 1 alternate slideInDown;
+}
+@keyframes slideInDown {
+    from { opacity: 0; transform: translateY(-665px); }
+    to { opacity: 1; transform: translateY(0px);}
 }
 /*----*/
 div[class*="2500"] {
@@ -630,15 +644,15 @@ div[class*="Pr"]:hover {
     letter-spacing: 3px;
     position: absolute;
     top: 0px;
-    left: 590px;
+    left: 665px;
 }
 .long606 {
     width: 40px !important;
     top: 90px !important;
-    right: 770px;
+    right: 745px;
 }
 .long607 {
-    width: 678px !important;
+    width: 654px !important;
     top: 90px !important;
     right: -200px;
     margin-right: 0px !important;
@@ -647,7 +661,7 @@ div[class*="Pr"]:hover {
     position: relative;
     top: -170px;
     float: left;
-    left: 260px !important;
+    left: 285px !important;
     height: 261px !important;
 }
 .back_to_top {
@@ -655,7 +669,7 @@ div[class*="Pr"]:hover {
     width: 250px;
     position: absolute;
     top: 92px;
-    margin-left: 319px;
+    margin-left: 344px;
     z-index: 5;
 }
 .contactContainer {
