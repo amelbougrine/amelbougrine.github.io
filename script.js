@@ -1,8 +1,8 @@
-const menu = document.querySelector(".menu")
-function showMenu () {
-    menu.classList.toggle("show");
-}
+// ****** constants & variables
 var numPage = 1 ;
+
+const menu = document.querySelector(".menu")
+
 const circle1 = document.querySelector(".circle1");
 const circle2 = document.querySelector(".circle2");
 const circle3 = document.querySelector(".circle3");
@@ -14,6 +14,7 @@ const textContainer = document.querySelector(".textContainer");
 const frame = document.querySelector(".frame");
 const photo = document.querySelector(".photo");
 const blocAnim = document.querySelector(".blocAnim");
+
 const P1 = document.querySelector(".P1");
 const P2 = document.querySelector(".P2");
 const P3 = document.querySelectorAll(".P3");
@@ -21,23 +22,44 @@ const P4 = document.querySelector(".P4");
 const P5 = document.querySelector(".P5");
 const pages = [P1, P2, P3, P4, P5];
 
-function nextPage2 () {
-    numPage = 2;
-    textContainer.classList.add("slideOutTop");
-    frame.classList.add("slideOutTop");
-    P2.style.display= "block";
-    setTimeout( () => {
-        P1.style.display = "none";
-    }, 2000);
+// ****** functions
+function showMenu () {
+    menu.classList.toggle("show");
+}
+
+function hideMenu () {
     if (menu.classList.contains("show")) {
         menu.classList.remove("show");
     }
+}
+
+function circle(num) {
     circles.forEach(element => {
         element.innerHTML = "";
     });
-    circle2.innerHTML = "<div></div>";
+    circles[num-1].innerHTML = "<div></div>";
 }
-function nextPage3 () {
+
+function hide(page) {
+    setTimeout( () => { 
+        page.style.display = "none"; 
+    }, 2000);
+}
+
+function show(page) {
+    page.style.display= "block";
+}
+
+function moveDown () {
+    numPage = 2;
+    P1.classList.add("slideOutTop");
+    show(P2);
+    hide(P1);
+    hideMenu();
+    circle(2);
+}
+
+function moveRight () {
     numPage = 3;
     P2.classList.add("slideOutLeft");
     photo.classList.add("slideoutPhoto");
@@ -103,7 +125,7 @@ function nextPage1 () {
     photo.style.display= "block";
     setTimeout( () => {
         P5.style.display= "none";
-    }, 1500);
+    }, 2000);
     if (menu.classList.contains("show")) {
         menu.classList.remove("show");
     }
@@ -129,37 +151,42 @@ function showProject(num) {
     detailArray[num-1].style.display = "block";
 }
 // show page
-function Page(num) {
-    for (let i=0; i<pages.length; i++) {
-        if (i==2) {
-            pages[i].forEach(element => {
-                element.style.display= "none";
-            });
-        } else {
-            pages[i].style.display= "none";
-        }
-        console.log(pages[i]);
-    };
-    photo.style.display = "none";
+// function Page(num) {
+//     for (let i=0; i<pages.length; i++) {
+//         if (i==2) {
+//             pages[i].forEach(element => {
+//                 element.style.display= "none";
+//             });
+//         } else {
+//             pages[i].style.display= "none";
+//         }
+//         console.log(pages[i]);
+//     };
+//     photo.style.display = "none";
 
-    if (num == 3) {
-        pages[num-1].forEach(element => {
-            element.classList.remove("slideinright");
-            element.classList.add("zoomIn");
-            element.style.display = "block";
-        });
-    } else {
-        pages[num-1].classList.remove("slideUp665", "slideleft", "slideInUp", "slideOutDown", "slideInDown");
-        pages[num-1].classList.add("zoomIn");
-        pages[num-1].style.display = "block";
-    }
-    if(num == 1 || num == 2) {
-        photo.classList.remove("slideinPhoto");
-        photo.classList.add("zoomIn");
-        photo.style.display = "block";
-    }
-    if(num == 4) {
-        blocAnim.style.display = "none";
-    }
-    showMenu();
-}
+//     if (num == 3) {
+//         pages[num-1].forEach(element => {
+//             element.classList.remove("slideinright");
+//             element.classList.add("zoomIn");
+//             element.style.display = "block";
+//         });
+//     }
+//      else {
+//         pages[num-1].classList.remove("slideUp665", "slideleft", "slideInUp", "slideOutDown", "slideInDown");
+//         // pages[num-1].classList.add("zoomIn");
+//         pages[num-1].style.display = "block";
+//     }
+//     if (num == 1 || num == 2) {
+//         pages[num-1].style.display = "block";
+//         pages[num-1].classList.add("zoomIn");
+//         textContainer.classList.remove("slideinLeft");
+//         textContainer.classList.add("zoomIn");
+//         photo.classList.remove("slideinPhoto");
+//         photo.classList.add("zoomIn");
+//         photo.style.display = "block";
+//     }
+//     if (num == 4) {
+//         blocAnim.style.display = "none";
+//     }
+//     showMenu();
+// }
