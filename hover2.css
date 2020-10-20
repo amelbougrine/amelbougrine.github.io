@@ -63,7 +63,7 @@
   mix-blend-mode: multiply;
   background: #aaafc3;
 }
-.grid li:last-child:before {
+.grid li:last-child:before, .grid li:last-child:after {
   backdrop-filter: grayscale(100%) blur(2px);
   -webkit-backdrop-filter: grayscale(100%) blur(2px);
 }

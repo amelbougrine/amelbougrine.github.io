@@ -3001,6 +3001,7 @@
   background: #000000b7;
   visibility: visible;
   opacity: 0.8;
+  backdrop-filter: grayscale(100%) blur(2px);
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
@@ -3010,11 +3011,11 @@
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .ih-item.square.effect6:hover .info {
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0;
 }
 /*.ih-item.square.effect6.from_left_and_right .info h3 {
   -webkit-transform: translateX(-100%);

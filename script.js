@@ -1,5 +1,4 @@
 // ****** constants & variables
-var numPage = 1 ;
 
 const menu = document.querySelector(".menu")
 
@@ -17,20 +16,36 @@ const blocAnim = document.querySelector(".blocAnim");
 
 const P1 = document.querySelector(".P1");
 const P2 = document.querySelector(".P2");
-const P3 = document.querySelectorAll(".P3");
+const P3 = document.querySelector(".P3");
 const P4 = document.querySelector(".P4");
 const P5 = document.querySelector(".P5");
 const pages = [P1, P2, P3, P4, P5];
 
+const myWorkIntro = document.querySelector(".myWorkIntro");
+const detail1 = document.querySelector(".detail1");
+const detail2 = document.querySelector(".detail2");
+const detail3 = document.querySelector(".detail3");
+const detail4 = document.querySelector(".detail4");
+const detail5 = document.querySelector(".detail5");
+const detail6 = document.querySelector(".detail6");
+const detailArray = [detail1, detail2, detail3, detail4, detail5, detail6];
+
+const line = document.querySelector(".down");
+
 // ****** functions
-function showMenu () {
+
+window.addEventListener("load", function() {
+    addAnimation(textContainer, "slideinLeft");
+    addAnimation(frame, "zoomIn");
+    addAnimation(photo, "slideinPhoto");
+});
+
+function showHideMenu() {
     menu.classList.toggle("show");
 }
 
-function hideMenu () {
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-    }
+function hideMenu() {
+    menu.classList.remove("show");
 }
 
 function circle(num) {
@@ -40,153 +55,111 @@ function circle(num) {
     circles[num-1].innerHTML = "<div></div>";
 }
 
-function hide(page) {
+function hideDelay(element, time) {
     setTimeout( () => { 
-        page.style.display = "none"; 
-    }, 2000);
+        element.style.display= "none";
+    }, time);
 }
 
-function show(page) {
-    page.style.display= "block";
+function hide(element) {
+    element.style.display= "none";
 }
 
-function moveDown () {
-    numPage = 2;
-    P1.classList.add("slideOutTop");
+function show(element) {
+    element.style.display= "block";
+}
+
+function addAnimation(element, name) {
+    element.classList.add(name);
+    removeAnimation(element, name)
+}
+
+function removeAnimation(element, name) {
+    setTimeout( () => { 
+        element.classList.remove(name);
+    }, 2500);
+}
+
+function moveDown1() {
+    addAnimation(P2, "slideInUp");
+    addAnimation(P1, "slideOutTop");
     show(P2);
-    hide(P1);
+    hideDelay(P1, 2000);
     hideMenu();
     circle(2);
 }
 
-function moveRight () {
-    numPage = 3;
-    P2.classList.add("slideOutLeft");
-    photo.classList.add("slideoutPhoto");
-    P3.forEach(element => {
-        element.style.display= "block";
-    });
-    setTimeout( () => {
-        photo.style.display= "none";
-        P2.style.display= "none";
-    }, 1000);
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-    }
-    circles.forEach(element => {
-        element.innerHTML = "";
-    });
-    circle3.innerHTML = "<div></div>";
+function moveRight() {
+    addAnimation(P3, "slideinright");
+    addAnimation(P2, "slideOutLeft");
+    addAnimation(photo, "slideoutPhoto");
+    show(P3);
+    hideDelay(photo, 1000);
+    hideDelay (P2, 1000);
+    hideMenu();
+    circle(3);
 }
-function nextPage4 () {
-    numPage = 4;
-    P3.forEach(element => {
-        element.classList.add("slideOutTop");
-    });
-    P4.style.display = "block";
+
+function moveDown2() {
+    addAnimation(P4, "slideUp665");
+    addAnimation(P3, "slideOutTop");
+    show(P4);
+    hideDelay(P3, 2000)
+    hideDelay(blocAnim, 2000);
+    hideMenu();
+    circle(4);
+}
+
+function moveLeft() {
+    addAnimation(P5, "slideleft");
+    addAnimation(P4, "slideOutRight");
+    show(P5);
+    hideDelay(P4, 2000);
+    hideMenu();
+    circle(5);
+}
+
+function moveTop() {
+    addAnimation(P1, "slideInDown");
+    addAnimation(photo, "slideInDown");
+    addAnimation(P5, "slideOutDown");
+    show(P1);
+    show(photo);
+    hideDelay(P5, 2000);
+    changeHeight();
+    hideMenu();
+    circle(1);
+}
+
+function changeHeight() {
+    line.style.height= "430px";
     setTimeout( () => {
-        P3.forEach(element => {
-            element.style.display = "none";
-        });
-        blocAnim.style.display = "none";
+        line.style.height= "830px";
     }, 2000);
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-    }
-    circles.forEach(element => {
-        element.innerHTML = "";
-    });
-    circle4.innerHTML = "<div></div>";
 }
-function nextPage5 () {
-    numPage = 5;
-    P4.classList.add("slideOutRight");
-    P5.style.display= "block";
-    setTimeout( () => {
-        P4.style.display= "none";
-    }, 2000);
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-    }
-    circles.forEach(element => {
-        element.innerHTML = "";
-    });
-    circle5.innerHTML = "<div></div>";
-}
-function nextPage1 () {
-    numPage = 1;
-    P5.classList.add("slideOutDown");
-    textContainer.classList.remove("slideinLeft");
-    // textContainer.classList.add("slideInDown");
-    P1.classList.add("slideInDown");
-    P1.style.display= "block";
-    photo.classList.remove("slideinPhoto");
-    photo.classList.add("slideInDown");
-    photo.style.display= "block";
-    setTimeout( () => {
-        P5.style.display= "none";
-    }, 2000);
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-    }
-    circles.forEach(element => {
-        element.innerHTML = "";
-    });
-    circle1.innerHTML = "<div></div>";
-}
-// show project
-const myWorkIntro = document.querySelector(".myWorkIntro");
-const detail1 = document.querySelector(".detail1");
-const detail2 = document.querySelector(".detail2");
-const detail3 = document.querySelector(".detail3");
-const detail4 = document.querySelector(".detail4");
-const detail5 = document.querySelector(".detail5");
-const detail6 = document.querySelector(".detail6");
-const detailArray = [detail1, detail2, detail3, detail4, detail5, detail6];
+
 function showProject(num) {
     myWorkIntro.style.display = "none";
-    detailArray.forEach( element => {
-        element.style.display= "none";
+    detailArray.forEach( elem => {
+        elem.style.display= "none";
     });
     detailArray[num-1].style.display = "block";
 }
-// show page
-// function Page(num) {
-//     for (let i=0; i<pages.length; i++) {
-//         if (i==2) {
-//             pages[i].forEach(element => {
-//                 element.style.display= "none";
-//             });
-//         } else {
-//             pages[i].style.display= "none";
-//         }
-//         console.log(pages[i]);
-//     };
-//     photo.style.display = "none";
 
-//     if (num == 3) {
-//         pages[num-1].forEach(element => {
-//             element.classList.remove("slideinright");
-//             element.classList.add("zoomIn");
-//             element.style.display = "block";
-//         });
-//     }
-//      else {
-//         pages[num-1].classList.remove("slideUp665", "slideleft", "slideInUp", "slideOutDown", "slideInDown");
-//         // pages[num-1].classList.add("zoomIn");
-//         pages[num-1].style.display = "block";
-//     }
-//     if (num == 1 || num == 2) {
-//         pages[num-1].style.display = "block";
-//         pages[num-1].classList.add("zoomIn");
-//         textContainer.classList.remove("slideinLeft");
-//         textContainer.classList.add("zoomIn");
-//         photo.classList.remove("slideinPhoto");
-//         photo.classList.add("zoomIn");
-//         photo.style.display = "block";
-//     }
-//     if (num == 4) {
-//         blocAnim.style.display = "none";
-//     }
-//     showMenu();
-// }
+function page(num) {
+    for (let i=0; i<pages.length; i++) {
+        hide(pages[i]);
+    };
+    hide(photo);
+    addAnimation(pages[num-1], "zoomIn");
+    show(pages[num-1]);
+    hideMenu();
+    circle(num);
+    if (num==1 || num ==2) {
+        addAnimation(photo, "zoomIn");
+        show(photo);
+    }
+    if (num==4) {
+        hideDelay(blocAnim, 1000);
+    }
+}

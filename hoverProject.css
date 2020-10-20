@@ -11,8 +11,8 @@
     position: relative;
     text-align: center;
     cursor: default;
+    border: 2px solid #f8b712;
   }
-  
   .hover .overlay {
     width: 100%;
     height: 100%;
@@ -21,12 +21,12 @@
     top: 0;
     left: 0;
   }
-  
   .hover img {
     display: block;
     position: relative;
+    width: 480px;
+    height: 300px;
   }
-  
   .hover h2 {
     text-transform: uppercase;
     color: #fff;
@@ -48,36 +48,27 @@
     border-radius: 0px;
     background-color: transparent;
   }
-  
   .hover button.info:hover {
     box-shadow: 0 0 5px #fff;
   }
-  
   /* styling to remove box shadow and border from buttons for last few effects */
-  
   .hover button.nullbutton {
     border: none;
     padding: 0px;
     margin: 0px;
   }
-  
   .hover button.nullbutton:hover {
     box-shadow: none;
   }
-  
   /* remove the blue line that shows on modal buttons after you have open and close a modal */
-  
   .modal-open .modal, button:focus {
       outline:none!important
   }
-  
   /* styling so when hovering over a div that opens a modal the cursor changes to a pointer */
   .point {
   cursor: pointer;
   }
-
   /* effect hover 10 */
-
 .ehover10 img {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -122,7 +113,6 @@
 .ehover10:hover p.icon-links a:focus {
 	color: #252d31;
 }
-
 .ehover10 button,
 .ehover10 p.icon-links a {
 	-webkit-transition: -webkit-transform 0.35s;
@@ -130,20 +120,15 @@
 	-webkit-transform: translate3d(0,200%,0);
 	transform: translate3d(0,200%,0);
 }
-
 .ehover10 p.icon-links a span::before {
 	display: inline-block;
 	padding: 8px 10px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-
 .ehover10 button {
 	display: inline-block;
 }
-
-
 .ehover10:hover .overlay,
 .ehover10:hover button,
 .ehover10:hover p.icon-links a {
@@ -151,12 +136,10 @@
 	transform: translate3d(0,0,0);
   visibility: visible;
 }
-
 .ehover10:hover h2 {
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
 }
-
 .ehover10:hover p.icon-links a:nth-child(3) {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
@@ -166,7 +149,6 @@
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }
-
 .ehover10:hover p.icon-links a:first-child {
 	-webkit-transition-delay: 0.2s;
 	transition-delay: 0.2s;

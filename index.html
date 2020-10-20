@@ -17,16 +17,16 @@
             <div class="logo">
                 <img src="images/logo.png" alt="Logo"/>
             </div>
-            <div class="menuIcon" onclick="showMenu()">
+            <div class="menuIcon" onclick="showHideMenu()">
                 <img src="images/menu.png"/>
             </div>
             <div class="menu">
                 <ul>
-                    <li onclick="Page(1)">Introduction</li>
-                    <li onclick="Page(2)"><NOBR>About Me</NOBR></li>
-                    <li onclick="Page(3)"><NOBR>My Work</NOBR></li>
-                    <li onclick="Page(4)"><NOBR>Coding Challenges</NOBR></li>
-                    <li onclick="Page(5)">Contact</li>
+                    <li onclick="page(1)">Introduction</li>
+                    <li onclick="page(2)"><NOBR>About Me</NOBR></li>
+                    <li onclick="page(3)"><NOBR>My Work</NOBR></li>
+                    <li onclick="page(4)"><NOBR>Coding Challenges</NOBR></li>
+                    <li onclick="page(5)">Contact</li>
                 </ul>
             </div>
             <div class="pages">
@@ -38,11 +38,11 @@
                     <li class="circle5"></li>
                 </ul>
             </div>
-            <div class="photo slideinPhoto">
+            <div class="photo">
                 <img src="images/photo.png"/>
             </div>
             <div class="container1 P1">
-                <div class="textContainer slideinLeft">
+                <div class="textContainer">
                     <div class="hello">
                         <div class="line"></div>
                         <h2>HELLO, I AM AMEL</h2>
@@ -51,18 +51,18 @@
                         <h1>I'M A <span class="goldenText">WEB</span> DEVELOPER</h1>
                         <h6>Are you looking for a developer who works hard but stays humble ?</h6>
                     </div>
-                    <div class="explore move" onclick="moveDown()">
+                    <div class="explore move" onclick="moveDown1()">
                         <h4>EXPLORE &#62; </h4>
                     </div>
                     <div class="line long"></div>
                     <div class="line down"></div>
                 </div>
-                <div class="frame zoomIn">
+                <div class="frame">
                     <div class="frame2"></div>
                     <div class="frame1"></div>
                 </div>
             </div> 
-            <div class="container2 slideInUp P2">
+            <div class="container2 P2">
                 <div class="about_Me"> About Me</div>
                 <div class="line down60"></div>
                 <div class="line long60"></div>
@@ -76,33 +76,29 @@
                     <h6>Well-organised person problem solver, independent employee with high attention to detail. Fan of sports, outdoor activities, and recently, playing piano.</h6>
                 </div>
             </div>
-            <div class="container3 slideinright P3">
-                <div class="my_Work P3"><NOBR>My Work</NOBR></div>
-                <div class="line long602 P3"></div>
-                <div class="codingChallenge move P3" onclick="nextPage4()">
+            <div class="container3 P3">
+                <div class="my_Work"><NOBR>My Work</NOBR></div>
+                <div class="line long602"></div>
+                <div class="codingChallenge move" onclick="moveDown2()">
                     <h4>CODING CHALLENGES &#62; </h4>
                 </div>             
-                <div class="line long603 P3"></div> 
-                <div class="line down601 P3"></div>
-                <div class="projectsContainer P3">  
+                <div class="line long603"></div> 
+                <div class="line down601"></div>
+                <div class="projectsContainer">  
                     <div class="projectDetail">
                         <div class="myWorkIntro">
                             <h6>The main area of my expertise is in front end development: HTML, CSS, JS (Typescript), building small and medium web app with React, custom pluging, features, animations, and coding interactive layouts.</h6>
                             <h6>I have also Back-End development experience with NodeJs, Express, and MongoDB.</h6>
                         </div>
-                        <div class="detail1 hover ehover10">
+                        <div class="detail1 hover ehover10 zoomIn">
                             <img class="img-responsive" src="images/image1.png" alt="">
                             <div class="overlay">
-                                <button class="info" data-toggle="modal" data-target="#modal10">Show code
-                                </button>
-                                <p class="icon-links">
-                                    <a href="#"><span class="fa fa-twitter"></span></a>
-                                    <a href="#"><span class="fa fa-facebook"></span></a>
-                                    <a href="#"><span class="fa fa-instagram"></span></a>
-                                </p>
+                                <p class="icon-links">React & Node E-Commerce Website<br>A website sells electronics devices like smartphones and lapetops</p>
+                                <button class="info" data-toggle="modal" data-target="#modal10">See Site</button>
+                                <button class="info" data-toggle="modal" data-target="#modal10">See Code</button>
                             </div>
                         </div>
-                        <div class="detail2 hover ehover10">
+                        <div class="detail2 hover ehover10 zoomIn">
                             <img class="img-responsive" src="images/image2.png" alt="">
                             <div class="overlay">
                                 <button class="info" data-toggle="modal" data-target="#modal10">Show code
@@ -114,7 +110,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="detail3 hover ehover10">
+                        <div class="detail3 hover ehover10 zoomIn">
                             <img class="img-responsive" src="images/image3.png" alt="">
                             <div class="overlay">
                                 <button class="info" data-toggle="modal" data-target="#modal10">Show code
@@ -126,7 +122,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="detail4 hover ehover10">
+                        <div class="detail4 hover ehover10 zoomIn">
                             <img class="img-responsive" src="images/image4.png" alt="">
                             <div class="overlay">
                                 <button class="info" data-toggle="modal" data-target="#modal10">Show code
@@ -138,7 +134,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="detail5 hover ehover10">
+                        <div class="detail5 hover ehover10 zoomIn">
                             <img class="img-responsive" src="images/image5.png" alt="">
                             <div class="overlay">
                                 <button class="info" data-toggle="modal" data-target="#modal10">Show code
@@ -150,7 +146,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="detail6 hover ehover10">
+                        <div class="detail6 hover ehover10 zoomIn">
                             <img class="img-responsive" src="images/image6.png" alt="">
                             <div class="overlay">
                                 <button class="info" data-toggle="modal" data-target="#modal10">Show code
@@ -191,11 +187,11 @@
                     </div>  
                 </div>
             </div>
-            <div class="container4 slideUp665 P4">
+            <div class="container4 P4">
                 <div class="coding_Challenge"><NOBR>Coding Challenges</NOBR></div>
                 <div class="line down603"></div>
                 <div class="line long604"></div>
-                <div class="contact move" onclick="nextPage5()">
+                <div class="contact move" onclick="moveLeft()">
                     <h4> &#60; CONTACT  </h4>
                 </div>             
                 <div class="line long605"></div>
@@ -241,10 +237,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="container5 slideleft P5">
+            <div class="container5 P5">
                 <div class="_contact"><NOBR>Contact</NOBR></div>
                 <div class="line long607"></div>
-                <div class="back_to_top move" onclick="nextPage1()">
+                <div class="back_to_top move" onclick="moveTop()">
                     <h4> &#60; BACK TO TOP </h4>
                 </div>             
                 <div class="line long606"></div> 
