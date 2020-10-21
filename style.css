@@ -604,12 +604,12 @@ div[class*="Pr"]:hover {
     z-index: 5;
 }
 .codingContainer, .blocAnim {
-    width: 985px;
-    height: 350px;
-    margin: 20px;
+    width: 785px;
+    height: 300px;
+    margin: 10px;
     position: absolute;
-    top: 130px;
-    left: 35px;
+    top: 220px;
+    left: 170px;
 }
 .blocAnim {
     opacity: 0;
@@ -670,4 +670,8 @@ div[class*="Pr"]:hover {
     position: absolute;
     top: 130px;
     left: 0px;
+}
+.border {
+    /* box-sizing: border-box; */
+    padding: 20px;
 }
