@@ -1,0 +1,256 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+// Accordion Height
+$a-height: 340px;
+
+// Position text along bottom
+$text-offset: $a-height - 90;
+
+.accordion {
+
+  width:690px;
+  float: right;
+  height:$a-height;
+  overflow:hidden;
+  margin:20px;
+
+  ul {
+
+    width:100%;
+    display:table;
+    table-layout:fixed;
+    margin:0;
+    padding:0;
+
+    li {
+
+      display:table-cell;
+      vertical-align:bottom;
+      position: relative;
+      width:16.666%; // 6 into 100
+      height:$a-height;
+
+      background-repeat:no-repeat;
+      background-position:center center;
+
+      transition:all 500ms ease;
+
+      .div {
+        
+        display:block;
+        overflow:hidden;
+        width:100%;
+
+        .a {
+          
+          display:block;
+          height:$a-height;
+          width:100%;
+          background: rgba(0,0,0,.2);
+          position:relative;
+          z-index:3;
+          vertical-align:bottom;
+          padding:15px 20px;
+          box-sizing:border-box;          
+          transition:all 200ms ease;
+
+          * {
+
+            opacity:0;
+            margin:0;
+            width:100%;
+            text-overflow:ellipsis;
+            position:relative;
+            z-index:5;
+            
+            white-space:nowrap;
+            overflow:hidden;
+            
+            -webkit-transform:translateX(-20px);
+            transform:translateX(-20px);
+
+            -webkit-transition:all 400ms ease;
+            transition:all 400ms ease;
+
+          }
+
+          h2 {
+            overflow:visible;
+            opacity: 1;
+            text-overflow:clip;
+            font-size:20px;
+            text-transform:uppercase;
+            margin-bottom:2px;
+            top: 190px;
+            left:-125px;
+            width: 238px;
+            transform: rotate(-90deg);
+            color: #e0a50f;
+            background-color: rgba(0, 0, 0, 0.452);
+          }
+          
+          p {
+            
+            top: 275px;
+            left: 3px;
+            font-size: 13.5px;
+            
+          }
+
+        }
+
+      }
+
+    }
+    
+    // Background images
+    li:nth-child(1) { 
+        background-image:url('images/work1.png');
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-right: 15px solid #0c141a;
+    }
+    li:nth-child(2) { 
+        background-image:url('images/work2.png'); 
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-right: 15px solid #0c141a;
+        .div h2 {
+            top: 172px;
+            left:-144px;
+            width: 276px;
+        }
+    }
+    li:nth-child(3) { 
+        background-image:url('images/work3.png'); 
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-right: 15px solid #0c141a;
+        .div h2 {
+            top: 149px;
+            left:-167px;
+            width: 322px;
+        }
+    }
+    li:nth-child(4) { 
+        background-image:url('images/work4.png'); 
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-right: 15px solid #0c141a;
+    }
+
+    &:hover li,
+    &:focus-within li { width:8%; }
+    
+    li:focus {
+      outline: none;
+    }
+
+    &:hover li:hover,
+    // allow users to tab through active slides
+    li:focus,
+    &:focus-within li:focus {
+
+      width:60%;
+
+      .a {
+        
+        background: rgb(248, 183, 18, .4);
+        
+        * {
+          
+          opacity:1;
+          -webkit-transform:translateX(0);
+          transform:translateX(0);
+        
+        }
+      
+      }
+
+    }
+    
+    &:hover li {
+      width: 8% !important;
+      
+      .a * { opacity: 0 !important; }
+    }
+    
+    &:hover li:hover {
+      width:60% !important;
+
+      .a {
+        
+        background:rgba(0,0,0,.7);
+        
+        * {
+          
+          opacity:1 !important;
+          -webkit-transform:translateX(0);
+          transform:translateX(0);
+        
+        }
+        h2 {
+            top: 270px;
+            left: 3px;
+        }
+      
+      }
+    }
+
+  }
+
+}
+
+// Stack items
+@media screen and (max-width: 600px) {
+  
+  // IE gets fussy if this isn't here
+  body { margin:0; }
+  
+  .accordion {
+    
+    height:auto;
+    
+    ul,ul:hover {
+      
+      li,li:hover {
+        
+        position:relative;
+        display:table;
+        table-layout:fixed;
+        width:100%;
+        
+        -webkit-transition:none;
+        transition:none;
+        
+      }
+      
+    }
+    
+  }
+
+}
+
+.about {
+  
+  text-align:center;
+  font-family:'Open Sans', sans-serif;
+  font-size:12px;
+  color:#666;
+  
+  .a {
+    
+    color:blue;
+    text-decoration:none;
+    
+    &:hover { text-decoration:underline; }
+    
+  }
+  
+}

@@ -65,6 +65,12 @@ function hide(element) {
     element.style.display= "none";
 }
 
+function showDelay(element, time) {
+    setTimeout( () => { 
+        element.style.display= "block";
+    }, time);
+}
+
 function show(element) {
     element.style.display= "block";
 }
@@ -121,10 +127,10 @@ function moveLeft() {
 
 function moveTop() {
     addAnimation(P1, "slideInDown");
-    addAnimation(photo, "slideInDown");
+    addAnimation(photo, "slideinPhoto");
     addAnimation(P5, "slideOutDown");
     show(P1);
-    show(photo);
+    showDelay(photo, 1000);
     hideDelay(P5, 2000);
     changeHeight();
     hideMenu();
@@ -150,6 +156,7 @@ function page(num) {
     for (let i=0; i<pages.length; i++) {
         hide(pages[i]);
     };
+    show(blocAnim);
     hide(photo);
     addAnimation(pages[num-1], "zoomIn");
     show(pages[num-1]);

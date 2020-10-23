@@ -119,14 +119,16 @@ main {
     letter-spacing: 2px;
 }
 .intreducton h1 {
-    font-size: 42px;
+    font-size: 38px;
     margin: 23px 0px;
+    word-spacing: 1px;
+    letter-spacing: 2px;
 }
 .intreducton h6, .textAboutMe h6, .projectDetail h6 {
     font-size: 14px;
     font-weight: normal;
-    word-spacing: 1px;
-    letter-spacing: 1px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
     margin-top: 0;
 }
 .goldenText {
@@ -208,8 +210,8 @@ div[class*="down"] {
     z-index: 1;
 }
 .photo img {
-    width: 600px;
-    height: 665px;
+    width: 590px;
+    height: 669px;
 }
 .pages ul {
     list-style-type: none;
@@ -365,20 +367,19 @@ div[class*="long60"] {
     left: 260px;
     width: 1090px !important;
 }
-.about_me, .my_Work, .coding_Challenges, ._contact {
+.about_Me, .my_Work, .coding_Challenges, ._contact {
     text-shadow: 0 0 2px #000 !important;
+    color: #a37630;
 }
 .about_Me {
     cursor: default;
     font-size: 80px;
     font-weight: 600;
     transform: rotate(-90deg);
-    color: #8b5432;
-    text-shadow: 0 0 2px #000 !important;
     letter-spacing: 3px;
     padding-left: 100px;
     position: absolute;
-    left: -310px;
+    left: -312px;
     top: 390px;
 }
 .myWork {
@@ -396,7 +397,8 @@ div[class*="long60"] {
 }
 .textAboutMe h3 {
     font-weight: bold;
-    word-spacing: 0px;
+    word-spacing: 3px;
+    letter-spacing: 3px;
     width: 380px;
 }
 .textAboutMe h6, .projectDetail h6  {
@@ -404,7 +406,8 @@ div[class*="long60"] {
     text-align: justify;
     /* letter-spacing: 0px;
     word-spacing: 1px; */
-    width: 300px;
+    line-height: 150%;
+    width: 295px;
     margin: 20px 0;
 }
 /* ----------------------------------------------------------------------------- */
@@ -423,10 +426,9 @@ div[class*="long60"] {
     cursor: default;
     font-size: 80px;
     font-weight: 600;
-    color: #8b5432;
     letter-spacing: 3px;
     position: absolute;
-    top: 400px;
+    top: 390px;
 }
 .long602 {
     width: 1075px !important;
@@ -460,7 +462,7 @@ div[class*="long60"] {
     position: absolute;
 }
 .projectDetail {
-    width: 520px;
+    width: 300px;
     height: 340px;
     margin: 20px 20px;
     padding: 20px 20px;
@@ -578,11 +580,10 @@ div[class*="Pr"]:hover {
     cursor: default;
     font-size: 80px;
     font-weight: 600;
-    color: #8b5432;
     letter-spacing: 3px;
     position: absolute;
-    top: 0px;
-    left: 250px;
+    top: -10px;
+    left: 240px;
 }
 .long604 {
     width: 470px !important;
@@ -638,7 +639,6 @@ div[class*="Pr"]:hover {
     cursor: default;
     font-size: 80px;
     font-weight: 600;
-    color: #8b5432;
     letter-spacing: 3px;
     position: absolute;
     top: 0px;
@@ -681,4 +681,14 @@ div[class*="Pr"]:hover {
 .border {
     /* box-sizing: border-box; */
     padding: 20px;
+}
+.small {
+    position: fixed;
+    font-size: 10px;
+    font-weight: 600;
+    left: 5px;
+    bottom: 5px;
+    z-index: 2000;
+    color: #b8a99c;
+    box-shadow: 0 0 1px #000;
 }
