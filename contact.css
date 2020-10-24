@@ -6,19 +6,19 @@
 }
 
 .b-1 {
-  background: url("images/logo1.png") no-repeat 100% 50%;
+  background: url("images/logo1.png") no-repeat 0% 50%;
 }
 
 .b-2 {
-  background: url("images/logo2.png") no-repeat 100% 50%;
+  background: url("images/logo2.png") no-repeat 0% 50%;
 }
 
 .b-3 {
-  background: url("images/logo3.png") no-repeat 100% 50%;
+  background: url("images/logo3.png") no-repeat 0% 50%;
 }
 
 .b-4 {
-  background: url("images/logo4.png") no-repeat 100% 50%;
+  background: url("images/logo4.png") no-repeat 0% 50%;
 }
 
 .badge {
@@ -26,26 +26,25 @@
   position: relative;
   width: 6rem;
   height: 6rem;
-  margin-right: 80px;
+  margin-left: 80px;
   cursor: pointer;
   background-size: 120%;
   border-radius: 50%;
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
 }
 .badge:hover {
-  box-shadow: 0px 0rem 1.5rem #daa520;
-  background-position: 0% 50%;
+  background-position: 100% 50%;
 }
 .badge:hover .text {
+  display: block;
   transform: rotate(-45deg) translate(0px) rotate(-315deg);
-  background: rgba(218, 165, 32, 0.5);
+  background: rgba(246, 227, 210, 0.5);
   width: 6rem;
   letter-spacing: 0.3rem;
   line-height: 6rem;
   height: 6rem;
   margin-top: -3rem;
   margin-left: -3rem;
-  text-shadow: 0 0 15px #fff;
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
 }
 .badge .text {
@@ -53,7 +52,7 @@
   position: absolute;
   width: 4rem;
   height: 4rem;
-  line-height: 3rem;
+  line-height: 4rem;
   left: 50%;
   top: 50%;
   margin-top: -1.5rem;
@@ -63,10 +62,11 @@
   font-weight: bolder;
   text-align: center;
   color: #000;
+  text-shadow: none;
   border-radius: 50%;
-  background: #daa520;
-  transform: rotate(-180deg) translate(-3rem) rotate(180deg);
-  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.623);
+  background: #f6e3d2;
+  transform: translate(-3rem);
+  box-shadow: 0px 0rem 1rem #0000009f;
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
 }
 

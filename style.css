@@ -229,6 +229,9 @@ li[class*="circle"] {
     border: 1px solid #f8b712;
     z-index: 1000;
 }
+li[class*="circle"]:hover {
+    cursor: pointer;
+}
 li[class*="circle"] div {
     width: 4px;
     height: 4px;
@@ -677,6 +680,14 @@ div[class*="Pr"]:hover {
     position: absolute;
     top: 130px;
     left: 0px;
+}
+.textContact, .container5 h4 {
+    position: relative;
+    left: 200px;
+}
+.textContact h4, .container5 h4 {
+    word-spacing: 2px;
+    letter-spacing: 2px;
 }
 .border {
     /* box-sizing: border-box; */
