@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
 $primary-color: #f6e3d2;
 $easing: all 0.5s cubic-bezier(.55,0,.1,1);
-$base-size: 6rem;
+$base-size: 5rem;
 
 .contactContainer {
 //   background: linear-gradient(#333,#111);
@@ -9,6 +9,7 @@ $base-size: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 @for $i from 1 through 4 {
@@ -35,10 +36,11 @@ $base-size: 6rem;
 
     .text {
       display: block;
-      transform: rotate(-45deg) translate(0px) rotate(-315deg);
+      transform:translate(10%);
       background: rgba($primary-color,.5);
       width: $base-size;
-      letter-spacing: 0.3rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.1rem;
       line-height: $base-size;
       height: $base-size;
       margin-top: -($base-size / 2);
@@ -53,12 +55,12 @@ $base-size: 6rem;
   .text {
     display: block;
     position: absolute;
-    width: ($base-size / 1.5);
-    height: ($base-size / 1.5);
-    line-height: ($base-size / 1.5);
-    left: 50%;
+    width: ($base-size / 1.3);
+    height: ($base-size / 1.3);
+    line-height: ($base-size / 1.3);
+    left: 40%;
     top: 50%;
-    margin-top: -($base-size / 4);
+    margin-top: -($base-size / 3);
     margin-left: -($base-size / 4);
     font-size: 0.9rem;
         font-family: Arial, Helvetica, sans-serif;

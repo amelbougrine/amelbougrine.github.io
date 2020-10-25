@@ -31,6 +31,7 @@ const detail6 = document.querySelector(".detail6");
 const detailArray = [detail1, detail2, detail3, detail4, detail5, detail6];
 
 const line = document.querySelector(".down");
+const phone = document.querySelector(".phone");
 
 // ****** functions
 
@@ -169,4 +170,10 @@ function page(num) {
     if (num==4) {
         hideDelay(blocAnim, 1000);
     }
+}
+function showPhone() {
+    phone.innerHTML= "23946046";
+}
+function hidePhone() {
+    phone.innerHTML= "Call Me";
 }

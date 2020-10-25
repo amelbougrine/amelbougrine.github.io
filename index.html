@@ -31,7 +31,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li onclick="page(1)">Main Page</li>
+                    <li onclick="page(1)"><NOBR>Main Page</NOBR></li>
                     <li onclick="page(2)"><NOBR>About Me</NOBR></li>
                     <li onclick="page(3)"><NOBR>My Work</NOBR></li>
                     <li onclick="page(4)"><NOBR>Coding Challenges</NOBR></li>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="intreducton">
                         <h1>I'M A <span class="goldenText">MANAGEMENT</span> CONSULTANT</h1>
-                        <h6>I love solve complex problems and bridge the gap between people and technology.</h6>
+                        <h6>I love solving complex problems and bridging the gap between people and technology.</h6>
                     </div>
                     <div class="explore move" onclick="moveDown1()">
                         <h4>EXPLORE &#62; </h4>
@@ -292,22 +292,28 @@
                 <div class="line long606"></div> 
                 <div class="line down604"></div>
                 <div class="textContact">
-                    <h4>Interresting about working together ?</h4>
-                    <h4>Get in touck.</h4>
+                    <h5>Interested in working together ? </h5>
+                    <h5>Get in touck.</h5>
                 </div>
-                <h4>Follow me at:</h4>
+                <form id="myform" action="/action_page.php" method="get" autocomplete="on">
+                    <input type="text" placeholder="Name" class="inputform " >
+                    <input type="text" placeholder="Telephone" class="inputform " required><br>
+                    <input type="email" placeholder="E-mail" class="inputform " required><br>
+                    <textarea placeholder="Your message..." rows="4" cols="34" class="inputform largeinput" required></textarea><br>
+                    <button type="submit" class="btn btn-outline-secondary">Send</button>                         
+                </form>
                 <div class="contactContainer"> 
-                    <div class="badge b-1">
-                        <div class="text">Phone</div>
+                    <div class="badge b-1" onmouseover="showPhone()" onmouseout="hidePhone()">
+                        <div class="text phone">Call Me</div>
                     </div>
                     <div class="badge b-2">
-                        <div class="text">E-mail</div>
+                        <div class="text">Mail Me</div>
                     </div>
                     <div class="badge b-3">
-                        <div class="text">LinkedIn</div>
+                        <div class="text">Add Me</div>
                     </div>
                     <div class="badge b-4">
-                        <div class="text">GitHub</div>
+                        <div class="text">Add me</div>
                     </div>
                 </div>
             </div>

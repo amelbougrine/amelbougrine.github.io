@@ -54,9 +54,9 @@ main {
 .menu {
     opacity: 0;
     width: 0px;
-    height: 0px;
+    height: 202px; 
     position: absolute;
-    right: 55px;
+    right: 43px;
     top: 234px;
     transition: all 0.5s;
     z-index: 1000;
@@ -70,23 +70,23 @@ main {
     overflow: hidden;
     margin-bottom: 18px;
     font-size: 12px;
+    font-weight: bold;
     padding: 6px;
     padding-left: 9px;
     letter-spacing: 2px;
-    background-color: #1a1919;
+    color: #000;
+    text-shadow: none;
+    background-color: #a37630;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 .menu ul li:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 15px #f8b712;
-    background-color: #000000;
+    background-color:  #f8b712;
 }
 .show {
-    opacity: 1; 
-    width: 185px;
-    height: 202px;   
-    right: 43px;
+    opacity: 1;
+    width: 185px; 
 }
 .textContainer {
     position: relative;
@@ -119,7 +119,7 @@ main {
     letter-spacing: 2px;
 }
 .intreducton h1 {
-    font-size: 38px;
+    font-size: 36px;
     margin: 23px 0px;
     word-spacing: 1px;
     letter-spacing: 2px;
@@ -127,7 +127,7 @@ main {
 .intreducton h6, .textAboutMe h6, .projectDetail h6 {
     font-size: 14px;
     font-weight: normal;
-    word-spacing: 2px;
+    word-spacing: 1px;
     letter-spacing: 2px;
     margin-top: 0;
 }
@@ -674,20 +674,73 @@ div[class*="Pr"]:hover {
     z-index: 5;
 }
 .contactContainer {
-    width: 1085px;
-    height: 450px;
-    margin: 20px;
-    position: absolute;
-    top: 130px;
-    left: 0px;
-}
-.textContact, .container5 h4 {
+    width: 400px;
+    height: 270px;
+    margin-top: -10px;
+    margin-left: 150px;
     position: relative;
-    left: 200px;
 }
-.textContact h4, .container5 h4 {
-    word-spacing: 2px;
-    letter-spacing: 2px;
+.textContact {
+    position: relative;
+    left: 150px;
+    margin-top: 170px;
+}
+.textContact h5{
+    font-size: 15px;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+}
+#myform {
+    height: auto;
+    width: 350px;
+    position: relative;
+    float: left;
+    margin-top: 10px;
+    margin-left: 145px;
+}
+.inputform {
+    position: relative;
+    box-sizing: border-box;
+    margin: 10px 20px;
+    border: none;
+    border-bottom: #f8b712 solid 0.5px;
+    background-color: #0c141a;
+    color: #f6e3d2;
+    width: 290px;
+    height: 20px;
+}
+.inputform:focus {
+    outline: 0;
+    border-bottom: #f8b712 solid 2px;
+}
+.inputform:hover {
+    border-bottom: #f8b712 solid 2px;
+}
+.largeinput {
+    height: 70px !important;
+}
+input::placeholder, textarea::placeholder {
+    font-size: 14px;
+    color: #ddcbbb;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+}
+.btn-outline-secondary {
+    width: 70px;
+    height: 30px;
+    background-color: #f8b712;
+    font-weight: 600;
+    color: #0c141a;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+    position: relative;
+    left: 135px !important;
+}
+.btn-outline-secondary:hover {
+    box-shadow: 0 0 8px #f8b712;
+    color: #000;
+    cursor: pointer;
 }
 .border {
     /* box-sizing: border-box; */
@@ -700,6 +753,6 @@ div[class*="Pr"]:hover {
     left: 5px;
     bottom: 5px;
     z-index: 2000;
-    color: #b8a99c;
+    color: #d8c6b6;
     box-shadow: 0 0 1px #000;
 }
