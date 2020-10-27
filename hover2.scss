@@ -107,11 +107,11 @@ $offset: var(--offset);
     background: #aaafc3;
   }
   li:last-child:before, li:last-child:after {
-    backdrop-filter: grayscale(100%) blur(2px);
+    backdrop-filter: grayscale(80%) blur(2px);
     -webkit-backdrop-filter: grayscale(100%) blur(2px);
   }
   //colors (optional)
-  @include colors(6,[#9C51B6, #e73b44, rgb(216, 216, 31), #299617, #225bee, #e95acc]);
+  @include colors(6,[#9942c2, #e6545c, #d6d637, #539248, #4072f1, #f363d6]);
 }
 
 @include moveInGrid(2, 6);
@@ -125,19 +125,21 @@ $offset: var(--offset);
 
 .description {
   font-family: "Unica One", sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   position: absolute;
-  // display: block;
   right: 2rem;
   left: 2rem;
   text-align: center;
   top: 50%;
   margin: 0 auto;
-  color: #f6e3d2;
+  color: #9ce3ee;
+  text-shadow: 0 0 25px #000;
   z-index: 100;
   opacity: 0;
   transform: translate3d(0, -50%, 0);
   transition: .3s 0s;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 li:hover .description {

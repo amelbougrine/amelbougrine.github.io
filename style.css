@@ -32,7 +32,7 @@ main {
     padding: 0;
 }
 .logo img:hover {
-    filter: drop-shadow(0 0 0.5rem #f8b712);
+    content:url("images/logo0.png");
     cursor: pointer;
 }
 .menuIcon {
@@ -48,8 +48,8 @@ main {
     padding: 0;
 }
 .menuIcon img:hover {
+    content:url("images/menu00.png");
     cursor: pointer;
-    filter: drop-shadow(0 0 0.5rem #f8b712);
 }
 .menu {
     opacity: 0;
@@ -268,6 +268,14 @@ div[class*="slideinLeft"] {
     to { opacity: 1;  transform: translateX(0px); }
 }
 /*----*/
+div[class*="zoomOut"] {
+    animation: 1s 1 alternate zoomOut;
+}
+@keyframes zoomOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.9);}
+}
+/*----*/
 div[class*="zoomIn"] {
     animation: 1s 1 alternate zoomIn;
 }
@@ -343,8 +351,8 @@ div[class*="slideInDown"] {
     to { opacity: 1; transform: translateY(0px);}
 }
 /*----*/
-div[class*="2500"] {
-    animation-duration: 2.5s;
+div[class*="500"] {
+    animation-duration: 0.5s !important;
 }
 /* ----------------------------------------------------------------------------- */
 .container2 {
@@ -397,7 +405,7 @@ div[class*="long60"] {
     z-index: 1000;
 }
 .textAboutMe {
-    margin-left: 35px;
+    margin-left: 55px;
     position: relative;
     top: 150px;
 }
@@ -406,6 +414,30 @@ div[class*="long60"] {
     word-spacing: 3px;
     letter-spacing: 3px;
     width: 380px;
+}
+.personality div {
+    position: relative;
+    left: 20px;
+    width: 250px;
+    height: 25px;
+    margin-top: 30px;
+    border: 1px solid #f8b712;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.personality div a {
+    height: 25px;
+    color: #f6e3d2;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    line-height: 25px;
+    padding-left: 35px;
+    font-size: 14px;
+}
+.personality div:hover {
+    box-shadow: 0 0 5px #f8b712;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 .textAboutMe h6, .projectDetail h6  {
     /* font-size: 14px; */
@@ -477,6 +509,9 @@ div[class*="long60"] {
     border-bottom: 2px solid #f8b712;
     text-align: center;
 }
+.projectDetail:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
 .projectDetail h5 {
     color: #0a95aa;
     font-size: 16px;
@@ -484,7 +519,7 @@ div[class*="long60"] {
 }
 .projectDetail h6 {
     font-size: 14px;
-    padding: 0px;
+    padding: 0px 5px;
     margin: 0 auto;
     letter-spacing: 0px;
     word-spacing: 0px;
@@ -636,17 +671,16 @@ div[class*="Pr"]:hover {
     width: 770px;
     height: 300px;
     float: right;
-    top: 180px;
+    top: 200px;
     left: 20px;
 }
 .textChallenges h4.education {
     color: #f8b712 !important;
-    float: left;
+    display: inline-block;
 }
 .cert2 {
     position: relative;
-    float: right;
-    left: 485px;
+    left: 480px;
 }
 .container4 h2 {
     position: relative;
@@ -657,19 +691,9 @@ div[class*="Pr"]:hover {
     top: 140px;
     margin-left: 280px;
 }
-.textChallenges div {
-    margin-bottom: 10px;
-    display: inline-block;
-    background-color: #f8b712;
-    position: relative;
-    left: -160px;
-    margin-top: 27px;
-    width: 435px;
-    height: 1px;
-}
 .textChallenges h4 {
     display: block;
-    margin: 20px 0px 10px 0px;
+    margin: 10px 0px;
     color: #5eaaa8;
     margin-left: -40px;
 }
@@ -681,7 +705,7 @@ div[class*="Pr"]:hover {
     font-weight: 600;
 }
 .textChallenges h6 {
-    margin: 5px 0;
+    margin: 5px 0px 15px 0px;
     font-size: 13px;
     line-height: 1.5;
     color: #e7dec8;
@@ -689,17 +713,63 @@ div[class*="Pr"]:hover {
     width: 470px;
     font-weight: normal;
 }
-.codingContainer, .blocAnim {
+.resize {
+    transition: all 1s ease-in-out;
+    width:  735px !important;
+    height: 500px !important;
+    top: 20px !important;
+    left: 298px !important; 
+}
+.resize2 {
+    right: -42px !important;
+    transition: all 1s ease-in-out;
+}
+.codingContainer, .blocAnim, .showCertificate{
     width: 535px;
     height: 300px;
     margin: 10px;
     position: absolute;
     top: 220px;
     left: 540px;
+    transition: all 1s ease-in-out;
 }
 .blocAnim {
-    opacity: 0;
     z-index: 1000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.showCertificate {
+    display: none;
+    z-index: 1000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.exit, .fullSize {
+    position: absolute;
+    right: 0px;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid #0a95aa;
+    /* box-shadow: 0 0 5px #0a95aa; */
+    transition: right 1s ease-in-out;
+}
+.exit:hover, .fullSize:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px #0a95aa;
+}
+.exit {
+    background-image: url("images/exit.png");
+}
+.fullSize {
+    top: 45px;
+    background-image: url("images/full.png");
 }
 /* ------------------------------------------------------------------------*/
 .container5 {

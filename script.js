@@ -32,6 +32,10 @@ const detailArray = [detail1, detail2, detail3, detail4, detail5, detail6];
 
 const line = document.querySelector(".down");
 const phone = document.querySelector(".phone");
+const exit = document.querySelector(".exit");
+const fullSize = document.querySelector(".fullSize");
+const showCertificate = document.querySelector(".showCertificate");
+const listCerti = ["url('images/certi1.png')", "url('images/certi2.png')", "url('images/certi3.png')", "url('images/certi4.png')", "url('images/certi5.png')", "url('images/certi6.png')"];
 
 // ****** functions
 
@@ -42,7 +46,11 @@ window.addEventListener("load", function() {
 });
 
 function showHideMenu() {
-    menu.classList.toggle("show");
+    switchList(menu, "show");
+}
+
+function switchList(element, list) {
+    element.classList.toggle(list);
 }
 
 function hideMenu() {
@@ -167,6 +175,9 @@ function page(num) {
         addAnimation(photo, "zoomIn");
         show(photo);
     }
+    if (num==3) {
+        addAnimation(photo, "slideoutPhoto");
+    }
     if (num==4) {
         hideDelay(blocAnim, 1000);
     }
@@ -176,4 +187,21 @@ function showPhone() {
 }
 function hidePhone() {
     phone.innerHTML= "Call Me";
+}
+function showCerti(num) {
+    addAnimation(showCertificate, "zoomIn500")
+    showDelay(showCertificate, 200);
+    showCertificate.style.backgroundImage = listCerti[num-1];
+}
+function hideCerti() {
+    removeAnimation(fullSize, "resize2");
+    removeAnimation(exit, "resize2");
+    removeAnimation(showCertificate, "resize");
+    addAnimation(showCertificate, "zoomOut500")
+    hideDelay(showCertificate, 500);
+}
+function sizeCerti() {
+    switchList(fullSize, "resize2");
+    switchList(exit, "resize2");
+    switchList(showCertificate, "resize");
 }
