@@ -19,7 +19,7 @@
   object-fit: cover;
   display: block;
   height: 100%;
-  filter: grayscale(100%);
+  filter: grayscale(90%);
 }
 
 .grid a {
@@ -87,29 +87,29 @@
 }
 
 .grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 33.3333333333%);
 }
 .grid li:last-child:after,
 .grid li:last-child:before {
   left: 0%;
-  transform: translate3d(-100%, -50%, 0);
+  transform: translate3d(-50%, -100%, 0);
 }
 .grid li:nth-child(1):hover ~ li:last-child:after,
 .grid li:nth-child(1):hover ~ li:last-child:before {
-  transform: translate3d(-200%, -100%, 0);
+  transform: translate3d(-100%, -200%, 0);
 }
 .grid li:nth-child(2):hover ~ li:last-child:after,
 .grid li:nth-child(2):hover ~ li:last-child:before {
-  transform: translate3d(-100%, -100%, 0);
+  transform: translate3d(0%, -200%, 0);
 }
 .grid li:nth-child(3):hover ~ li:last-child:after,
 .grid li:nth-child(3):hover ~ li:last-child:before {
-  transform: translate3d(0%, -100%, 0);
+  transform: translate3d(-100%, -100%, 0);
 }
 .grid li:nth-child(4):hover ~ li:last-child:after,
 .grid li:nth-child(4):hover ~ li:last-child:before {
-  transform: translate3d(-200%, 0%, 0);
+  transform: translate3d(0%, -100%, 0);
 }
 .grid li:nth-child(5):hover ~ li:last-child:after,
 .grid li:nth-child(5):hover ~ li:last-child:before {
@@ -122,29 +122,29 @@
 
 @media (max-width: 100em) {
   .grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 33.3333333333%);
   }
   .grid li:last-child:after,
 .grid li:last-child:before {
     left: 0%;
-    transform: translate3d(-100%, -50%, 0);
+    transform: translate3d(-50%, -100%, 0);
   }
   .grid li:nth-child(1):hover ~ li:last-child:after,
 .grid li:nth-child(1):hover ~ li:last-child:before {
-    transform: translate3d(-200%, -100%, 0);
+    transform: translate3d(-100%, -200%, 0);
   }
   .grid li:nth-child(2):hover ~ li:last-child:after,
 .grid li:nth-child(2):hover ~ li:last-child:before {
-    transform: translate3d(-100%, -100%, 0);
+    transform: translate3d(0%, -200%, 0);
   }
   .grid li:nth-child(3):hover ~ li:last-child:after,
 .grid li:nth-child(3):hover ~ li:last-child:before {
-    transform: translate3d(0%, -100%, 0);
+    transform: translate3d(-100%, -100%, 0);
   }
   .grid li:nth-child(4):hover ~ li:last-child:after,
 .grid li:nth-child(4):hover ~ li:last-child:before {
-    transform: translate3d(-200%, 0%, 0);
+    transform: translate3d(0%, -100%, 0);
   }
   .grid li:nth-child(5):hover ~ li:last-child:after,
 .grid li:nth-child(5):hover ~ li:last-child:before {
@@ -161,16 +161,14 @@
 }
 .description {
   font-family: "Unica One", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   position: absolute;
-  display: block;
   right: 2rem;
   left: 2rem;
   text-align: center;
   top: 50%;
-  width: 60px;
-  margin: auto;
-  color: white;
+  margin: 0 auto;
+  color: #f6e3d2;
   z-index: 100;
   opacity: 0;
   transform: translate3d(0, -50%, 0);

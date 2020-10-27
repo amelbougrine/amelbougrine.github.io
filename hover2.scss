@@ -63,7 +63,7 @@ $offset: var(--offset);
   object-fit: cover;
   display: block;
   height: 100%;
-  filter: grayscale(100%);
+  filter: grayscale(90%);
 }
 .grid a {
   display: block;
@@ -114,10 +114,10 @@ $offset: var(--offset);
   @include colors(6,[#9C51B6, #e73b44, rgb(216, 216, 31), #299617, #225bee, #e95acc]);
 }
 
-@include moveInGrid(3, 6);
+@include moveInGrid(2, 6);
 
 @media (max-width: 100em) {
-  @include moveInGrid(3, 6);
+  @include moveInGrid(2, 6);
   :root {
     --offset: 0;
   }
@@ -125,16 +125,15 @@ $offset: var(--offset);
 
 .description {
   font-family: "Unica One", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   position: absolute;
-  display: block;
+  // display: block;
   right: 2rem;
   left: 2rem;
   text-align: center;
   top: 50%;
-  width: 60px;
-  margin: auto;
-  color: white;
+  margin: 0 auto;
+  color: #f6e3d2;
   z-index: 100;
   opacity: 0;
   transform: translate3d(0, -50%, 0);

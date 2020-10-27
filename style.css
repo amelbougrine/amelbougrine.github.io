@@ -153,7 +153,7 @@ main {
 .explore:hover, .myWork:hover, .codingChallenge:hover, .contact:hover, .back_to_top:hover  {
     cursor: pointer;
 }
-.explore h4, .myWork h4, .codingChallenge h4, .contact h4, .back_to_top h4 {
+.explore h4, .myWork h4, .codingChallenge h4, .contact h4, .back_to_top h4, .education {
     text-shadow: 0 0 15px #000;
     display: inline;
     font-size: 14px;
@@ -370,8 +370,8 @@ div[class*="long60"] {
     top: 570px;
 }
 .long601 {
-    left: 260px;
-    width: 1090px !important;
+    left: 440px;
+    width: 810px !important;
 }
 .about_Me, .my_Work, .coding_Challenges, ._contact {
     text-shadow: 0 0 2px #000 !important;
@@ -379,18 +379,18 @@ div[class*="long60"] {
 }
 .about_Me {
     cursor: default;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
     transform: rotate(-90deg);
     letter-spacing: 3px;
     padding-left: 100px;
     position: absolute;
-    left: -312px;
-    top: 390px;
+    left: -280px;
+    top: 330px;
 }
 .myWork {
     float: left;
-    width: 210px;
+    width: 410px;
     position: absolute;
     top: 570px;
     margin-left: 60px;
@@ -430,14 +430,14 @@ div[class*="long60"] {
 }
 .my_Work {
     cursor: default;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
     letter-spacing: 3px;
     position: absolute;
-    top: 390px;
+    top: 410px;
 }
 .long602 {
-    width: 1075px !important;
+    width: 1225px !important;
     top: 492px !important;
     left: -500px;
 }
@@ -459,7 +459,7 @@ div[class*="long60"] {
     width: 360px;
     position: absolute;
     top: 494px;
-    margin-left: 590px;
+    margin-left: 740px;
 }
 .projectsContainer {
     width: 1070px;
@@ -470,12 +470,24 @@ div[class*="long60"] {
 .projectDetail {
     width: 300px;
     height: 340px;
-    margin: 20px 20px;
-    padding: 20px 20px;
+    margin: 20px 10px;
     display: inline-block;
     box-sizing: border-box;
-    border: 2px solid #f8b712;
+    border-top: 2px solid #f8b712;
+    border-bottom: 2px solid #f8b712;
     text-align: center;
+}
+.projectDetail h5 {
+    color: #0a95aa;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.projectDetail h6 {
+    font-size: 14px;
+    padding: 0px;
+    margin: 0 auto;
+    letter-spacing: 0px;
+    word-spacing: 0px;
 }
 .myWorkIntro {
     margin: 20 auto;
@@ -584,12 +596,12 @@ div[class*="Pr"]:hover {
 }
 .coding_Challenges {
     cursor: default;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
     letter-spacing: 3px;
     position: absolute;
-    top: -10px;
-    left: 240px;
+    top: 10px;
+    left: 380px;
 }
 .long604 {
     width: 470px !important;
@@ -617,13 +629,73 @@ div[class*="Pr"]:hover {
     margin-left: -15px;
     z-index: 5;
 }
+.textChallenges {
+    position: absolute;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    width: 770px;
+    height: 300px;
+    float: right;
+    top: 180px;
+    left: 20px;
+}
+.textChallenges h4.education {
+    color: #f8b712 !important;
+    float: left;
+}
+.cert2 {
+    position: relative;
+    float: right;
+    left: 485px;
+}
+.container4 h2 {
+    position: relative;
+    color: #0a95aa !important;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 900px;
+    top: 140px;
+    margin-left: 280px;
+}
+.textChallenges div {
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: #f8b712;
+    position: relative;
+    left: -160px;
+    margin-top: 27px;
+    width: 435px;
+    height: 1px;
+}
+.textChallenges h4 {
+    display: block;
+    margin: 20px 0px 10px 0px;
+    color: #5eaaa8;
+    margin-left: -40px;
+}
+.textChallenges h5 {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #f5c592;
+    margin-left: -10px;
+    font-weight: 600;
+}
+.textChallenges h6 {
+    margin: 5px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #e7dec8;
+    margin-left: -10px;
+    width: 470px;
+    font-weight: normal;
+}
 .codingContainer, .blocAnim {
-    width: 785px;
+    width: 535px;
     height: 300px;
     margin: 10px;
     position: absolute;
     top: 220px;
-    left: 170px;
+    left: 540px;
 }
 .blocAnim {
     opacity: 0;
@@ -747,7 +819,7 @@ input::placeholder, textarea::placeholder {
 }
 .border {
     /* box-sizing: border-box; */
-    padding: 20px;
+    padding: 10px;
 }
 .small {
     position: fixed;
