@@ -114,6 +114,7 @@ function moveDown2() {
     addAnimation(P3, "slideOutTop");
     show(P4);
     hideDelay(P3, 2000);
+    show(blocAnim);
     hideDelay(blocAnim, 2000);
     hideMenu();
     circle(4);
