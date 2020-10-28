@@ -32,7 +32,7 @@ main {
     padding: 0;
 }
 .logo img:hover {
-    content:url("images/logo0.png");
+    content:url("images/logo0.jpeg");
     cursor: pointer;
 }
 .menuIcon {
@@ -48,7 +48,7 @@ main {
     padding: 0;
 }
 .menuIcon img:hover {
-    content:url("images/menu00.png");
+    content:url("images/menu00.jpeg");
     cursor: pointer;
 }
 .menu {
@@ -121,7 +121,7 @@ main {
 .intreducton h1 {
     font-size: 36px;
     margin: 23px 0px;
-    word-spacing: 1px;
+    word-spacing: 0px;
     letter-spacing: 2px;
 }
 .intreducton h6, .textAboutMe h6, .projectDetail h6 {
@@ -423,7 +423,7 @@ div[class*="long60"] {
     margin-top: 30px;
     border: 1px solid #f8b712;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .personality div a {
     height: 25px;
@@ -432,12 +432,12 @@ div[class*="long60"] {
     letter-spacing: 2px;
     text-decoration: none;
     line-height: 25px;
-    padding-left: 35px;
+    padding-left: 22px;
     font-size: 14px;
 }
 .personality div:hover {
     box-shadow: 0 0 5px #f8b712;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .textAboutMe h6, .projectDetail h6  {
     /* font-size: 14px; */
@@ -672,7 +672,7 @@ div[class*="Pr"]:hover {
     height: 300px;
     float: right;
     top: 200px;
-    left: 20px;
+    left: 50px;
 }
 .textChallenges h4.education {
     color: #f8b712 !important;
@@ -705,9 +705,9 @@ div[class*="Pr"]:hover {
     font-weight: 600;
 }
 .textChallenges h6 {
-    margin: 5px 0px 15px 0px;
+    margin: 5px 0px 20px 0px;
     font-size: 13px;
-    line-height: 1.5;
+    line-height: 1.2;
     color: #e7dec8;
     margin-left: -10px;
     width: 470px;
@@ -725,12 +725,12 @@ div[class*="Pr"]:hover {
     transition: all 1s ease-in-out;
 }
 .codingContainer, .blocAnim, .showCertificate{
-    width: 535px;
+    width: 500px;
     height: 300px;
     margin: 10px;
     position: absolute;
     top: 220px;
-    left: 540px;
+    left: 575px;
     transition: all 1s ease-in-out;
 }
 .blocAnim {
@@ -765,16 +765,16 @@ div[class*="Pr"]:hover {
     box-shadow: 0 0 15px #0a95aa;
 }
 .exit {
-    background-image: url("images/exit.png");
+    background-image: url("images/exit.jpeg");
 }
 .fullSize {
     top: 45px;
-    background-image: url("images/full.png");
+    background-image: url("images/full.jpeg");
 }
 /* ------------------------------------------------------------------------*/
 .container5 {
     position: absolute;
-    left: 75px;
+    left: 0px;
     top: 100px;
     height: 665px;
     width: 1090px;
@@ -790,32 +790,32 @@ div[class*="Pr"]:hover {
     letter-spacing: 3px;
     position: absolute;
     top: 0px;
-    left: 665px;
+    left: 740px;
 }
 .long606 {
     width: 40px !important;
     top: 90px !important;
-    right: 745px;
+    right: 670px;
 }
 .long607 {
     width: 654px !important;
     top: 90px !important;
-    right: -200px;
+    right: -275px;
     margin-right: 0px !important;
 }
 .down604 {
     position: relative;
-    top: -270px;
+    top: -310px;
     float: left;
-    left: 285px !important;
-    height: 361px !important;
+    left: 360px !important;
+    height: 401px !important;
 }
 .back_to_top {
     float: right;
     width: 250px;
     position: absolute;
     top: 92px;
-    margin-left: 344px;
+    margin-left: 419px;
     z-index: 5;
 }
 .contactContainer {
@@ -835,13 +835,23 @@ div[class*="Pr"]:hover {
     word-spacing: 3px;
     letter-spacing: 3px;
 }
+.text1, .text2, .text3 {
+    display: inline-block;
+    margin-top: 0px;
+}
+.text2 {
+    margin-left: 200px;
+}
+.text3 {
+    margin-left: 220px;
+}
 #myform {
     height: auto;
     width: 350px;
     position: relative;
     float: left;
     margin-top: 10px;
-    margin-left: 145px;
+    margin-left: 130px;
 }
 .inputform {
     position: relative;
@@ -887,6 +897,31 @@ input::placeholder, textarea::placeholder {
     color: #000;
     cursor: pointer;
 }
+.bownload {
+    position: absolute;
+    top: 280px;
+    left: 930px;
+    width: 150px;
+    height: 35px;
+    background-color: #f8b712;
+    text-align: center;
+    border-radius: 8px;
+}
+.bownload a {
+    text-decoration: none;
+    text-shadow: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    height: 35px;
+    line-height: 35px;
+}
+.bownload:hover {
+    cursor: pointer;
+    background-color: #c7910a;
+    box-shadow: 0 0 10px #f8b712;
+}
+/*---------------*/
 .border {
     /* box-sizing: border-box; */
     padding: 10px;

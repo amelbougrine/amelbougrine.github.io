@@ -35,15 +35,9 @@ const phone = document.querySelector(".phone");
 const exit = document.querySelector(".exit");
 const fullSize = document.querySelector(".fullSize");
 const showCertificate = document.querySelector(".showCertificate");
-const listCerti = ["url('images/certi1.png')", "url('images/certi2.png')", "url('images/certi3.png')", "url('images/certi4.png')", "url('images/certi5.png')", "url('images/certi6.png')"];
+const listCerti = ["url('images/certi1.jpeg')", "url('images/certi2.jpeg')", "url('images/certi3.jpeg')", "url('images/certi4.jpeg')", "url('images/certi5.jpeg')", "url('images/certi6.jpeg')"];
 
 // ****** functions
-
-window.addEventListener("load", function() {
-    addAnimation(textContainer, "slideinLeft");
-    addAnimation(frame, "zoomIn");
-    addAnimation(photo, "slideinPhoto");
-});
 
 function showHideMenu() {
     switchList(menu, "show");
@@ -92,7 +86,7 @@ function addAnimation(element, name) {
 function removeAnimation(element, name) {
     setTimeout( () => { 
         element.classList.remove(name);
-    }, 2500);
+    }, 2100);
 }
 
 function moveDown1() {
@@ -105,12 +99,12 @@ function moveDown1() {
 }
 
 function moveRight() {
-    addAnimation(P3, "slideinright");
     addAnimation(P2, "slideOutLeft");
     addAnimation(photo, "slideoutPhoto");
+    addAnimation(P3, "slideinright");
     show(P3);
-    hideDelay(photo, 1000);
-    hideDelay (P2, 1000);
+    hideDelay(photo, 2000);
+    hideDelay (P2, 2000);
     hideMenu();
     circle(3);
 }
@@ -119,7 +113,7 @@ function moveDown2() {
     addAnimation(P4, "slideUp665");
     addAnimation(P3, "slideOutTop");
     show(P4);
-    hideDelay(P3, 2000)
+    hideDelay(P3, 2000);
     hideDelay(blocAnim, 2000);
     hideMenu();
     circle(4);
@@ -167,17 +161,18 @@ function page(num) {
     };
     show(blocAnim);
     hide(photo);
+    hideMenu();
     addAnimation(pages[num-1], "zoomIn");
     show(pages[num-1]);
-    hideMenu();
     circle(num);
     if (num==1 || num ==2) {
         addAnimation(photo, "zoomIn");
         show(photo);
     }
-    if (num==3) {
-        addAnimation(photo, "slideoutPhoto");
-    }
+    // if (num==3) {
+    //     addAnimation(photo, "slideoutPhoto");
+    //     hideDelay(photo, 1000);
+    // }
     if (num==4) {
         hideDelay(blocAnim, 1000);
     }

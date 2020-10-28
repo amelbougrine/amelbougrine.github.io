@@ -14,7 +14,7 @@ $base-size: 5rem;
 
 @for $i from 1 through 4 {
     .b-#{$i} {
-        background: url("images/logo#{$i}.png") no-repeat 0% 50%;
+        background: url("images/logo#{$i}.jpeg") no-repeat 0% 50%;
     }
 }
 
