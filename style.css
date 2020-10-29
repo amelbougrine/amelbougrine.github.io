@@ -502,7 +502,7 @@ div[class*="long60"] {
 .projectDetail {
     width: 300px;
     height: 340px;
-    margin: 20px 10px;
+    margin: 20px 10px 20px 10px;
     display: inline-block;
     box-sizing: border-box;
     border-top: 2px solid #f8b712;
@@ -513,9 +513,16 @@ div[class*="long60"] {
     background-color: rgba(0, 0, 0, 0.4);
 }
 .projectDetail h5 {
-    color: #0a95aa;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #20cef5;
     font-size: 16px;
     margin-bottom: 10px;
+}
+.challenges {
+    position: relative;
+    top: -80px;
+    left: 20px;
 }
 .projectDetail h6 {
     font-size: 14px;
@@ -524,90 +531,6 @@ div[class*="long60"] {
     letter-spacing: 0px;
     word-spacing: 0px;
 }
-.myWorkIntro {
-    margin: 20 auto;
-    margin-top: 50px;
-}
-.myWorkIntro h6 {
-    width: 500px;
-}
-.projects {
-    width: 500px;
-    height: 460px;
-    float: right;
-    position: relative;
-}
-div[class*="Pr"] {
-    box-sizing: border-box;
-    margin: 4px;
-    float: right;
-    background-color: #000000;
-    border: 2px solid #f8b712 !important;
-    overflow: hidden;
-}
-div[class*="Pr"]:hover {
-    box-shadow: 0px 0px 10px #f8b712 inset;
-}
-.Pr1 {
-    width: 198px !important;
-    height: 144px !important;
-    margin-top: 0px !important;
-    margin-right: 0px !important;
-}
-.Pr1 img {
-    width: 194px !important;
-    height: 140px !important;
-}
-.Pr2 {
-    width: 118px !important;
-    height: 92px !important;
-    margin-left: 50px !important;
-    margin-top: 52px !important;
-}
-.Pr2 img {
-    width: 174px !important;
-    height: 88px !important;
-}
-.Pr3 {
-    width: 168px !important;
-    height: 148px !important;
-    margin-right: 108px !important;
-}
-.Pr3 img {
-    width: 204px !important;
-    height: 144px !important;
-}
-.Pr4 {
-    width: 188px !important;
-    height: 108px !important;
-    margin-bottom: 45px !important;
-}
-.Pr4 img {
-    width: 204px !important;
-    height: 104px !important;
-}
-.Pr5 {
-    width: 238px !important;
-    height: 144px !important;
-    margin-right: 38px !important;
-    margin-bottom: 0px !important;
-}
-.Pr5 img {
-    width: 234px !important;
-    height: 140px !important;
-}
-.Pr6 {
-    width: 118px !important;
-    height: 108px !important;
-    position: relative;   
-    bottom: 38px;
-    z-index: 5;
-}
-.Pr6 img {
-    width: 194px !important;
-    height: 104px !important;
-}
-
 .test img {
     width:400px;
     height:300px;
@@ -684,7 +607,7 @@ div[class*="Pr"]:hover {
 }
 .container4 h2 {
     position: relative;
-    color: #0a95aa !important;
+    color: #20cef5 !important;
     margin-bottom: 10px;
     font-size: 20px;
     width: 900px;
@@ -694,7 +617,7 @@ div[class*="Pr"]:hover {
 .textChallenges h4 {
     display: block;
     margin: 10px 0px;
-    color: #5eaaa8;
+    color: #57b1ae;
     margin-left: -40px;
 }
 .textChallenges h5 {
@@ -729,7 +652,7 @@ div[class*="Pr"]:hover {
     height: 300px;
     margin: 10px;
     position: absolute;
-    top: 220px;
+    top: 225px;
     left: 575px;
     transition: all 1s ease-in-out;
 }
@@ -756,13 +679,13 @@ div[class*="Pr"]:hover {
     background-size: contain;
     background-position: center;
     border-radius: 50%;
-    border: 1px solid #0a95aa;
-    /* box-shadow: 0 0 5px #0a95aa; */
+    border: 1px solid #20cef5;
+    /* box-shadow: 0 0 5px #20cef5; */
     transition: right 1s ease-in-out;
 }
 .exit:hover, .fullSize:hover {
     cursor: pointer;
-    box-shadow: 0 0 15px #0a95aa;
+    box-shadow: 0 0 15px #20cef5;
 }
 .exit {
     background-image: url("images/exit.jpeg");
