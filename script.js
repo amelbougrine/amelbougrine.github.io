@@ -1,5 +1,7 @@
 // ****** constants & variables
 
+var page = 1;
+
 const menu = document.querySelector(".menu")
 
 const circle1 = document.querySelector(".circle1");
@@ -90,6 +92,7 @@ function removeAnimation(element, name) {
 }
 
 function moveDown1() {
+    page = 2;
     addAnimation(P2, "slideInUp");
     addAnimation(P1, "slideOutTop");
     show(P2);
@@ -99,6 +102,7 @@ function moveDown1() {
 }
 
 function moveRight() {
+    page = 3;
     addAnimation(P2, "slideOutLeft");
     addAnimation(photo, "slideoutPhoto");
     addAnimation(P3, "slideinright");
@@ -110,6 +114,7 @@ function moveRight() {
 }
 
 function moveDown2() {
+    page = 4;
     addAnimation(P4, "slideUp665");
     addAnimation(P3, "slideOutTop");
     show(P4);
@@ -121,6 +126,7 @@ function moveDown2() {
 }
 
 function moveLeft() {
+    page = 5;
     addAnimation(P5, "slideleft");
     addAnimation(P4, "slideOutRight");
     show(P5);
@@ -130,6 +136,7 @@ function moveLeft() {
 }
 
 function moveTop() {
+    page = 1;
     addAnimation(P1, "slideInDown");
     addAnimation(photo, "slideinPhoto");
     addAnimation(P5, "slideOutDown");
@@ -156,7 +163,8 @@ function showProject(num) {
     detailArray[num-1].style.display = "block";
 }
 
-function page(num) {
+function menuPage(num) {
+    page = num;
     for (let i=0; i<pages.length; i++) {
         hide(pages[i]);
     };
@@ -170,14 +178,11 @@ function page(num) {
         addAnimation(photo, "zoomIn");
         show(photo);
     }
-    // if (num==3) {
-    //     addAnimation(photo, "slideoutPhoto");
-    //     hideDelay(photo, 1000);
-    // }
     if (num==4) {
         hideDelay(blocAnim, 1000);
     }
 }
+
 function showPhone() {
     phone.innerHTML= "23946046";
 }
@@ -201,3 +206,50 @@ function sizeCerti() {
     switchList(exit, "resize2");
     switchList(showCertificate, "resize");
 }
+
+/* Add the event listeners for each event. */
+document.addEventListener('wheel', DoSomething);
+document.addEventListener('mousewheel', DoSomething);
+document.addEventListener('DOMMouseScroll', DoSomething);
+/* The function that will run when the events are triggered. */
+function DoSomething (e) {
+    console.log("call");
+    document.removeEventListener('wheel', DoSomething);
+    document.removeEventListener('mousewheel', DoSomething);
+    document.removeEventListener('DOMMouseScroll', DoSomething);
+    setTimeout (function() {
+        console.log("Call Back");
+        document.addEventListener('wheel', DoSomething);
+        document.addEventListener('mousewheel', DoSomething);
+        document.addEventListener('DOMMouseScroll', DoSomething);
+    },2000);
+    /* Check whether the wheel event is supported. */
+    if (e.type == "wheel") supportsWheel = true;
+    else if (supportsWheel) return;
+    /* Determine the direction of the scroll (< 0 → up, > 0 → down). */
+    var delta = ((e.deltaY || -e.wheelDelta || e.detail) >> 10) || 1;
+    if (delta == 1) {
+        switch(page) {
+            case 2:
+                moveRight();
+                break;
+            case 3:
+                moveDown2();
+                break;
+            case 4:
+                moveLeft();
+                break;
+            case 5:
+                moveTop();
+                break;
+            case 1:
+                moveDown1();
+                break;
+            default:
+                break;
+        }
+    }
+    console.log(delta, "page-:",page);
+    delta = 0;
+    console.log(delta, "page--:",page);
+}   
