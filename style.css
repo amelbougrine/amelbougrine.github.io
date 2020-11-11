@@ -119,16 +119,16 @@ main {
     letter-spacing: 2px;
 }
 .intreducton h1 {
-    font-size: 36px;
+    font-size: 44px;
     margin: 23px 0px;
-    word-spacing: 0px;
-    letter-spacing: 2px;
+    word-spacing: 4px;
+    letter-spacing: 6px;
 }
 .intreducton h6, .textAboutMe h6, .projectDetail h6 {
     font-size: 14px;
     font-weight: normal;
     word-spacing: 1px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-top: 0;
 }
 .goldenText {
@@ -378,8 +378,8 @@ div[class*="long60"] {
     top: 570px;
 }
 .long601 {
-    left: 440px;
-    width: 810px !important;
+    left: 268px;
+    width: 1090px !important;
 }
 .about_Me, .my_Work, .coding_Challenges, ._contact {
     text-shadow: 0 0 2px #000 !important;
@@ -398,16 +398,16 @@ div[class*="long60"] {
 }
 .myWork {
     float: left;
-    width: 410px;
+    width: 210px;
     position: absolute;
-    top: 570px;
+    top: 572px;
     margin-left: 60px;
     z-index: 1000;
 }
 .textAboutMe {
     margin-left: 55px;
     position: relative;
-    top: 150px;
+    top: 120px;
 }
 .textAboutMe h3 {
     font-weight: bold;
@@ -442,8 +442,8 @@ div[class*="long60"] {
 .textAboutMe h6, .projectDetail h6  {
     /* font-size: 14px; */
     text-align: justify;
-    /* letter-spacing: 0px;
-    word-spacing: 1px; */
+    letter-spacing: 2px;
+    word-spacing: 0px;
     line-height: 150%;
     width: 295px;
     margin: 20px 0;
@@ -467,9 +467,10 @@ div[class*="long60"] {
     letter-spacing: 3px;
     position: absolute;
     top: 410px;
+    left: 38px;
 }
 .long602 {
-    width: 1225px !important;
+    width: 1075px !important;
     top: 492px !important;
     left: -500px;
 }
@@ -491,7 +492,7 @@ div[class*="long60"] {
     width: 360px;
     position: absolute;
     top: 494px;
-    margin-left: 740px;
+    margin-left: 590px;
 }
 .projectsContainer {
     width: 1070px;
@@ -502,43 +503,41 @@ div[class*="long60"] {
 .projectDetail {
     width: 300px;
     height: 340px;
-    margin: 20px 10px 20px 10px;
+    margin: 20px;
     display: inline-block;
     box-sizing: border-box;
     border-top: 2px solid #f8b712;
     border-bottom: 2px solid #f8b712;
     text-align: center;
 }
-.projectDetail:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.projectDetail h5 {
-    letter-spacing: 1px;
-    word-spacing: 1px;
-    color: #20cef5;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-.challenges {
-    position: relative;
-    top: -80px;
-    left: 20px;
-}
 .projectDetail h6 {
+    padding: 20px 5px 0px 5px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.visit {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #f8b712;
+    text-align: center;
+    border-radius: 8px;
+}
+.visit a {
+    text-decoration: none;
+    text-shadow: none;
+    color: #000;
     font-size: 14px;
-    padding: 0px 5px;
-    margin: 0 auto;
-    letter-spacing: 0px;
-    word-spacing: 0px;
+    font-weight: 600;
+    height: 35px;
+    line-height: 35px;
 }
-.test img {
-    width:400px;
-    height:300px;
-    margin: 0 auto;
-    display: block;
-}
-.test button {
-    display: block;
+.visite:hover {
+    cursor: pointer;
+    background-color: #ebc973;
+    box-shadow: 0 0 10px #f8b712;
 }
 /* ------------------------------------------------------------------------*/
 .container4 {

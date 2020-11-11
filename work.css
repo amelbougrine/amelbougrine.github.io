@@ -1,7 +1,7 @@
 .accordion {
   font-family: Arial, Helvetica, sans-serif;
   width: 690px;
-  float: left;
+  float: right;
   height: 340px;
   overflow: hidden;
   margin: 20px;
@@ -41,7 +41,6 @@
   transition: all 200ms ease;
 }
 .accordion ul li .div .a * {
-  background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   margin: 0;
   width: 100%;
@@ -61,11 +60,12 @@
   text-transform: uppercase;
   margin-bottom: 2px;
   top: 100px;
-  left: -227px;
+  left: -229px;
   width: 437px;
   transform: rotate(-90deg);
-  color: #0a95aa;
-  background-color: rgba(0, 0, 0, 0.7);
+  color: #000;
+  padding-left: 7px;
+  background-color: #f8b712;
 }
 .accordion ul li .div .a p {
   position: absolute;
