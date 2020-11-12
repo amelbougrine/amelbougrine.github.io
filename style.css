@@ -417,8 +417,8 @@ div[class*="long60"] {
 }
 .personality div {
     position: relative;
-    left: 20px;
-    width: 250px;
+    left: 10px;
+    width: 280px;
     height: 25px;
     margin-top: 30px;
     border: 1px solid #f8b712;
@@ -432,7 +432,7 @@ div[class*="long60"] {
     letter-spacing: 2px;
     text-decoration: none;
     line-height: 25px;
-    padding-left: 22px;
+    padding-left: 27px;
     font-size: 14px;
 }
 .personality div:hover {
@@ -501,43 +501,92 @@ div[class*="long60"] {
     position: absolute;
 }
 .projectDetail {
-    width: 300px;
+    width: 320px;
     height: 340px;
     margin: 20px;
     display: inline-block;
     box-sizing: border-box;
-    border-top: 2px solid #f8b712;
-    border-bottom: 2px solid #f8b712;
+    border-left: 2px double #f8b712;
     text-align: center;
+    padding: 0px 0px 0px 10px;
 }
 .projectDetail h6 {
-    padding: 20px 5px 0px 5px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.github {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    margin: 8px;
+    bottom: 10px;
+    border-radius: 3px;
+    background-image: url(images/logo44.jpeg);
+    background-size: contain;
+    filter: brightness(90%);
+}
+.github:hover {
+    box-shadow: 0 0 10px #f8b712;
+    cursor: pointer;
 }
 .visit {
-    position: absolute;
-    top: 80px;
-    left: 10px;
+    position: fixed;
+    display: inline-block;
+    top: 40px;
+    left: 30px;
     width: 100px;
     height: 30px;
     background-color: #f8b712;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 3px;
+    margin-left: 40px !important;
 }
 .visit a {
     text-decoration: none;
     text-shadow: none;
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     height: 35px;
-    line-height: 35px;
+    line-height: 30px;
+    letter-spacing: 1px;
 }
-.visite:hover {
+.visit:hover {
     cursor: pointer;
     background-color: #ebc973;
     box-shadow: 0 0 10px #f8b712;
+}
+.tech {
+    position: relative;
+    display: inline-block;
+    background-color: #bba597;
+    color: #000;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px !important;
+}
+.tech:hover {
+    cursor: default;
+    background-color: #dac7a0;
+    box-shadow: none;
+}
+.accordion .content {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    height: 180px;
+    width: 380px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 20px;
 }
 /* ------------------------------------------------------------------------*/
 .container4 {
@@ -558,7 +607,7 @@ div[class*="long60"] {
     letter-spacing: 3px;
     position: absolute;
     top: 10px;
-    left: 380px;
+    left: 280px;
 }
 .long604 {
     width: 470px !important;

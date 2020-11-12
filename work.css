@@ -43,7 +43,6 @@
 .accordion ul li .div .a * {
   opacity: 0;
   margin: 0;
-  width: 100%;
   position: relative;
   z-index: 5;
   text-shadow: none;
@@ -60,7 +59,7 @@
   text-transform: uppercase;
   margin-bottom: 2px;
   top: 100px;
-  left: -229px;
+  left: -230px;
   width: 437px;
   transform: rotate(-90deg);
   color: #000;
@@ -88,15 +87,8 @@
 .accordion ul li .div .a h6 {
   line-height: 1.4;
   font-size: 14px;
-  margin-bottom: 10px;
-}
-.accordion ul li .div .a span {
-  color: #f6e3d2;
-  font-size: 14px;
-  background: rgba(0, 0, 0, 0.7) !important;
-}
-.accordion ul li .div .a .topH5 {
-  margin-top: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 .accordion ul li:nth-child(1) {
   background-image: url("images/work1.jpeg");
@@ -113,14 +105,14 @@
   border-right: 15px solid #0c141a;
 }
 .accordion ul li:nth-child(3) {
-  background-image: url("images/work4.jpeg");
+  background-image: url("images/work3.jpeg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   border-right: 15px solid #0c141a;
 }
 .accordion ul li:nth-child(4) {
-  background-image: url("images/work5.jpeg");
+  background-image: url("images/work4.jpeg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,13 +142,10 @@
   transform: translateX(0);
 }
 .accordion ul:hover li:hover .a h2 {
-  top: 10px;
-  left: 0px;
-}
-.accordion ul:hover li:hover .a p {
-  position: absolute;
-  top: 50px;
-  left: 20px;
+  top: 20px;
+  left: 10px;
+  width: 413px;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 600px) {
