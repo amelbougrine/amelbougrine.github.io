@@ -23,15 +23,6 @@ const P4 = document.querySelector(".P4");
 const P5 = document.querySelector(".P5");
 const pages = [P1, P2, P3, P4, P5];
 
-const myWorkIntro = document.querySelector(".myWorkIntro");
-const detail1 = document.querySelector(".detail1");
-const detail2 = document.querySelector(".detail2");
-const detail3 = document.querySelector(".detail3");
-const detail4 = document.querySelector(".detail4");
-const detail5 = document.querySelector(".detail5");
-const detail6 = document.querySelector(".detail6");
-const detailArray = [detail1, detail2, detail3, detail4, detail5, detail6];
-
 const line = document.querySelector(".down");
 const phone = document.querySelector(".phone");
 const exit = document.querySelector(".exit");
@@ -153,14 +144,6 @@ function changeHeight() {
     setTimeout( () => {
         line.style.height= "830px";
     }, 2000);
-}
-
-function showProject(num) {
-    myWorkIntro.style.display = "none";
-    detailArray.forEach( elem => {
-        elem.style.display= "none";
-    });
-    detailArray[num-1].style.display = "block";
 }
 
 function menuPage(num) {

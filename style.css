@@ -76,13 +76,13 @@ main {
     letter-spacing: 2px;
     color: #000;
     text-shadow: none;
-    background-color: #a37630;
+    background-color: #f8b712;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 .menu ul li:hover {
     cursor: pointer;
-    background-color:  #f8b712;
+    background-color:  #a37630;
 }
 .show {
     opacity: 1;
@@ -98,7 +98,7 @@ main {
     z-index: 4;
 }
 .line {
-    width: 60px;
+    width: 50px;
     height: 1px;
     background-color: #f8b712;
     float: left;
@@ -150,8 +150,9 @@ main {
     50%  {left:30px;}
     100%  {left:0px;}
 }
-.explore:hover, .myWork:hover, .codingChallenge:hover, .contact:hover, .back_to_top:hover  {
+.explore h4:hover, .myWork h4:hover, .codingChallenge h4:hover, .contact h4:hover, .back_to_top h4:hover  {
     cursor: pointer;
+    text-shadow: 0 0 5px #fcbe22;
 }
 .explore h4, .myWork h4, .codingChallenge h4, .contact h4, .back_to_top h4, .education {
     text-shadow: 0 0 15px #000;
@@ -162,20 +163,20 @@ main {
     color: #f8b712;
 }
 div[class*="long"] {
-    width: 70px;
+    width: 100px;
     height: 1px;
     margin-right: 0;
-    margin-left: 20px;
+    margin-left: 10px;
     border-radius: 0%;
 }
 div[class*="down"] {
     width: 1px;
-    height: 830px;
+    height: 800px;
     margin-right: 0;
 }
 .frame {
     position: relative;
-    top: 68px;
+    top: 48px;
     width: 325px;
     height: 535px;
     margin: 0 auto;
@@ -193,7 +194,7 @@ div[class*="down"] {
 }
 .frame2 {
     position: relative;
-    top: 210px;
+    top: 230px;
     left: -40px;
     width: 90px;
     height: 140px;
@@ -358,7 +359,7 @@ div[class*="500"] {
 .container2 {
     position: absolute;
     left: 360px;
-    top: 22px;
+    top: 2px;
     height: 665px;
     z-index: 5;
 }
@@ -367,19 +368,20 @@ div[class*="500"] {
 }
 .down60 {
     position: absolute;
+    left: 20px;
     height: 780px !important;
-    bottom: 83px;
+    bottom: 103px;
 }
 div[class*="long60"] {
     width: 40px;
-    margin-left: 0px !important;
+    margin-left: 20px !important;
     margin-right: 20px !important;
     position: absolute;    /* absolut    ------ */
-    top: 570px;
+    top: 550px;
 }
 .long601 {
     left: 268px;
-    width: 1090px !important;
+    width: 1070px !important;
 }
 .about_Me, .my_Work, .coding_Challenges, ._contact {
     text-shadow: 0 0 2px #000 !important;
@@ -393,21 +395,21 @@ div[class*="long60"] {
     letter-spacing: 3px;
     padding-left: 100px;
     position: absolute;
-    left: -280px;
+    left: -260px;
     top: 330px;
 }
 .myWork {
     float: left;
     width: 210px;
     position: absolute;
-    top: 572px;
-    margin-left: 60px;
+    top: 552px;
+    margin-left: 80px;
     z-index: 1000;
 }
 .textAboutMe {
-    margin-left: 55px;
+    margin-left: 75px;
     position: relative;
-    top: 120px;
+    top: 160px;
 }
 .textAboutMe h3 {
     font-weight: bold;
@@ -451,8 +453,8 @@ div[class*="long60"] {
 /* ----------------------------------------------------------------------------- */
 .container3 {
     position: absolute;
-    left: 75px;
-    top: 100px; /*same other containers*/
+    left: 115px;
+    top: 80px; /*same other containers*/
     height: 665px;
     width: 1090px;
     z-index: 3;
@@ -466,33 +468,33 @@ div[class*="long60"] {
     font-weight: 600;
     letter-spacing: 3px;
     position: absolute;
-    top: 410px;
-    left: 38px;
+    top: 390px;
+    left: 138px;
 }
 .long602 {
     width: 1075px !important;
-    top: 492px !important;
+    top: 472px !important;
     left: -500px;
 }
 .long603 {
     width: 60px !important;
-    top: 492px !important;
+    top: 472px !important;
     right: 30px;
     margin-right: 0px !important;
 }
 .down601 {
     position: relative;
-    top: 492px;
+    top: 472px;
     float: right;
     right: 49px !important;
-    height: 260px !important;
+    height: 280px !important;
 }
 .codingChallenge {
     float: left;
     width: 360px;
     position: absolute;
-    top: 494px;
-    margin-left: 590px;
+    top: 474px;
+    margin-left: 610px;
 }
 .projectsContainer {
     width: 1070px;
@@ -591,8 +593,8 @@ div[class*="long60"] {
 /* ------------------------------------------------------------------------*/
 .container4 {
     position: absolute;
-    left: 75px;
-    top: 100px;
+    left: 115px;
+    top: 80px;
     height: 665px;
     width: 1090px;
     z-index: 4;
@@ -607,12 +609,12 @@ div[class*="long60"] {
     letter-spacing: 3px;
     position: absolute;
     top: 10px;
-    left: 280px;
+    left: 270px;
 }
 .long604 {
     width: 470px !important;
     top: 90px !important;
-    left: -500px;
+    left: -520px;
 }
 .long605 {
     width: 850px !important;
@@ -660,7 +662,7 @@ div[class*="long60"] {
     font-size: 20px;
     width: 900px;
     top: 140px;
-    margin-left: 280px;
+    margin-left: 300px;
 }
 .textChallenges h4 {
     display: block;
@@ -720,20 +722,20 @@ div[class*="long60"] {
 .exit, .fullSize {
     position: absolute;
     right: 0px;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 10px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     border-radius: 50%;
-    border: 1px solid #20cef5;
+    border: 1px solid #FBC900;
     /* box-shadow: 0 0 5px #20cef5; */
     transition: right 1s ease-in-out;
 }
 .exit:hover, .fullSize:hover {
     cursor: pointer;
-    box-shadow: 0 0 15px #20cef5;
+    box-shadow: 0 0 15px #FBC900;
 }
 .exit {
     background-image: url("images/exit.jpeg");
@@ -745,8 +747,8 @@ div[class*="long60"] {
 /* ------------------------------------------------------------------------*/
 .container5 {
     position: absolute;
-    left: 0px;
-    top: 100px;
+    left: 20px;
+    top: 80px;
     height: 665px;
     width: 1090px;
     z-index: 4;
@@ -769,9 +771,9 @@ div[class*="long60"] {
     right: 670px;
 }
 .long607 {
-    width: 654px !important;
+    width: 674px !important;
     top: 90px !important;
-    right: -275px;
+    right: -295px;
     margin-right: 0px !important;
 }
 .down604 {
@@ -854,9 +856,9 @@ input::placeholder, textarea::placeholder {
 .btn-outline-secondary {
     width: 70px;
     height: 30px;
-    background-color: #f8b712;
+    background-color: #FBC900;
     font-weight: 600;
-    color: #0c141a;
+    color: #000;
     border: none;
     border-radius: 5px;
     padding: 4px 8px;
@@ -864,8 +866,8 @@ input::placeholder, textarea::placeholder {
     left: 135px !important;
 }
 .btn-outline-secondary:hover {
+    background-color: #fad43c;
     box-shadow: 0 0 8px #f8b712;
-    color: #000;
     cursor: pointer;
 }
 .bownload {
@@ -874,7 +876,7 @@ input::placeholder, textarea::placeholder {
     left: 930px;
     width: 150px;
     height: 35px;
-    background-color: #f8b712;
+    background-color: #FBC900;
     text-align: center;
     border-radius: 8px;
 }
@@ -889,7 +891,7 @@ input::placeholder, textarea::placeholder {
 }
 .bownload:hover {
     cursor: pointer;
-    background-color: #c7910a;
+    background-color: #fad43c;
     box-shadow: 0 0 10px #f8b712;
 }
 /*---------------*/
