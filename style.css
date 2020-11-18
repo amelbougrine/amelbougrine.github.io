@@ -171,7 +171,7 @@ div[class*="long"] {
 }
 div[class*="down"] {
     width: 1px;
-    height: 800px;
+    height: 785px;
     margin-right: 0;
 }
 .frame {
@@ -477,7 +477,7 @@ div[class*="long60"] {
     left: -500px;
 }
 .long603 {
-    width: 60px !important;
+    width: 40px !important;
     top: 472px !important;
     right: 30px;
     margin-right: 0px !important;
@@ -566,11 +566,11 @@ div[class*="long60"] {
     margin-bottom: 30px;
     margin-top: 10px;
     width: 70px;
-    height: 25px;
+    height: 20px;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 20px;
     text-align: center;
     border-radius: 10px;
     margin-right: 20px !important;

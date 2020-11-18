@@ -19,7 +19,7 @@
   object-fit: cover;
   display: block;
   height: 100%;
-  filter: grayscale(90%);
+  filter: grayscale(80%);
 }
 
 .grid a {

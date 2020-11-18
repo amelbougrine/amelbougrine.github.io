@@ -140,9 +140,9 @@ function moveTop() {
 }
 
 function changeHeight() {
-    line.style.height= "430px";
+    line.style.height= "400px";
     setTimeout( () => {
-        line.style.height= "830px";
+        line.style.height= "785px";
     }, 2000);
 }
 
@@ -236,3 +236,6 @@ function DoSomething (e) {
     delta = 0;
     console.log(delta, "page--:",page);
 }   
+function hundleSubmit(event) {
+    event.preventDefault();
+}

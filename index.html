@@ -246,12 +246,12 @@
                     <h5 class="text2">Get in touck:</h5>
                     <h5 class="text3">Download my CV:</h5>
                 </div>
-                <form id="myform" action="/action_page.php" method="get" autocomplete="on">
-                    <input type="text" placeholder="Name" class="inputform " >
-                    <input type="text" placeholder="Telephone" class="inputform " required><br>
-                    <input type="email" placeholder="E-mail" class="inputform " required><br>
-                    <textarea placeholder="Your message..." rows="4" cols="34" class="inputform largeinput" required></textarea><br>
-                    <button type="submit" class="btn btn-outline-secondary">Send</button>                         
+                <form id="myform" action="https://formsubmit.co/amel.1989ab@gmail.com" method="post" autocomplete="on">
+                    <input type="text" placeholder="Name" name="name" value="" class="inputform">
+                    <input type="text" placeholder="Telephone" name="tel" value="" class="inputform" required><br>
+                    <input type="email" placeholder="E-mail" name="email" value="" class="inputform" required><br>
+                    <textarea placeholder="Your message..." rows="4" cols="34" name="message" value="" class="inputform largeinput" required></textarea><br>
+                    <input type="submit" name="submit" value="Send" class="btn btn-outline-secondary" onclick="hundleSubmit(e)">                        
                 </form>
                 <div class="contactContainer"> 
                     <div class="badge b-1" onmouseover="showPhone()" onmouseout="hidePhone()">
