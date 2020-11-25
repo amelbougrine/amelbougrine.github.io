@@ -46,6 +46,7 @@ main {
     height: 35px;
     margin: 0;
     padding: 0;
+    transition: all 1s ease-in-out;;
 }
 .menuIcon img:hover {
     content:url("images/menu00.jpeg");
