@@ -91,7 +91,7 @@ main {
 }
 .textContainer {
     position: relative;
-    top: 240px;
+    top: 210px;
     left: 70px;
     float: left;
     word-spacing: 6px;
@@ -120,10 +120,10 @@ main {
     letter-spacing: 2px;
 }
 .intreducton h1 {
-    font-size: 44px;
+    font-size: 41px;
     margin: 23px 0px;
-    word-spacing: 4px;
-    letter-spacing: 6px;
+    word-spacing: 3px;
+    letter-spacing: 4px;
 }
 .intreducton h6, .textAboutMe h6, .projectDetail h6 {
     font-size: 14px;
@@ -131,6 +131,9 @@ main {
     word-spacing: 1px;
     letter-spacing: 3px;
     margin-top: 0;
+}
+.intreducton h6 {
+    font-size: 13px;
 }
 .goldenText {
     color: #f8b712;
@@ -151,17 +154,45 @@ main {
     50%  {left:30px;}
     100%  {left:0px;}
 }
-.explore h4:hover, .myWork h4:hover, .codingChallenge h4:hover, .contact h4:hover, .back_to_top h4:hover  {
+.explore h4:hover, .mySkills h4:hover, .codingChallenge h4:hover, .contact h4:hover, .back_to_top h4:hover  {
     cursor: pointer;
     text-shadow: 0 0 5px #fcbe22;
 }
-.explore h4, .myWork h4, .codingChallenge h4, .contact h4, .back_to_top h4, .education {
+.explore h4, .mySkills h4, .codingChallenge h4, .contact h4, .back_to_top h4, .education {
     text-shadow: 0 0 15px #000;
     display: inline;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 10px;
     color: #f8b712;
+    
+}
+.education {
+    line-height: 1.6;
+    color: #e7dec8;
+    position: absolute;
+    left: 350px;
+    top: 120px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.ed2 {
+    display: inline-block;
+    top: 0;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-left: -150px;
+    margin-top: 80px;
+    color: #f8b712;
+}
+.ed22 {
+    position: absolute;
+    display: block;
+    font-size: 14px;
+    left: -40px;
+    top: -35px;
+    color: #e7dec8;
+    margin-bottom: 30px;
 }
 div[class*="long"] {
     width: 100px;
@@ -172,7 +203,7 @@ div[class*="long"] {
 }
 div[class*="down"] {
     width: 1px;
-    height: 785px;
+    height: 755px;
     margin-right: 0;
 }
 .frame {
@@ -195,10 +226,10 @@ div[class*="down"] {
 }
 .frame2 {
     position: relative;
-    top: 230px;
+    top: 205px;
     left: -40px;
     width: 90px;
-    height: 140px;
+    height: 200px;
     line-height: 89px;
     background-color: #0c141a;
     z-index: 3;
@@ -370,41 +401,41 @@ div[class*="500"] {
 .down60 {
     position: absolute;
     left: 20px;
-    height: 780px !important;
+    height: 740px !important;
     bottom: 103px;
 }
 div[class*="long60"] {
-    width: 40px;
+    width: 100px;
     margin-left: 20px !important;
     margin-right: 20px !important;
     position: absolute;    /* absolut    ------ */
     top: 550px;
 }
 .long601 {
-    left: 268px;
-    width: 1070px !important;
+    left: 348px;
+    width: 990px !important;
 }
-.about_Me, .my_Work, .coding_Challenges, ._contact {
+.about_Me, .my_skills, .my_work, ._contact {
     text-shadow: 0 0 2px #000 !important;
-    color: #a37630;
+    color: #cc8b236c;
 }
 .about_Me {
     cursor: default;
-    font-size: 70px;
+    font-size: 100px;
     font-weight: 600;
     transform: rotate(-90deg);
     letter-spacing: 3px;
     padding-left: 100px;
     position: absolute;
-    left: -260px;
-    top: 330px;
+    left: -330px;
+    top: 310px;
 }
-.myWork {
+.mySkills {
     float: left;
     width: 210px;
     position: absolute;
     top: 552px;
-    margin-left: 80px;
+    margin-left: 135px;
     z-index: 1000;
 }
 .textAboutMe {
@@ -417,6 +448,7 @@ div[class*="long60"] {
     word-spacing: 3px;
     letter-spacing: 3px;
     width: 380px;
+    margin-left: 20px;
 }
 .personality div {
     position: relative;
@@ -451,6 +483,9 @@ div[class*="long60"] {
     width: 295px;
     margin: 20px 0;
 }
+.textAboutMe h6 {
+    width: 350px;
+}
 /* ----------------------------------------------------------------------------- */
 .container3 {
     position: absolute;
@@ -463,22 +498,22 @@ div[class*="long60"] {
 .P3 {
     display: none;
 }
-.my_Work {
+.my_skills {
     cursor: default;
-    font-size: 70px;
+    font-size: 100px;
     font-weight: 600;
     letter-spacing: 3px;
     position: absolute;
-    top: 390px;
-    left: 138px;
+    top: -40px;
+    left: 320px;
 }
 .long602 {
-    width: 1075px !important;
+    width: 1225px !important;
     top: 472px !important;
     left: -500px;
 }
 .long603 {
-    width: 40px !important;
+    width: 70px !important;
     top: 472px !important;
     right: 30px;
     margin-right: 0px !important;
@@ -495,13 +530,14 @@ div[class*="long60"] {
     width: 360px;
     position: absolute;
     top: 474px;
-    margin-left: 610px;
+    margin-left: 760px;
 }
 .projectsContainer {
     width: 1070px;
-    height: 460px;
-    margin-left: 20px;
+    height: 430px;
+    margin-left: 0px;
     position: absolute;
+    top: 180px;
 }
 .projectDetail {
     width: 320px;
@@ -533,16 +569,15 @@ div[class*="long60"] {
     cursor: pointer;
 }
 .visit {
-    position: fixed;
+    position: relative;
     display: inline-block;
     top: 40px;
-    left: 30px;
-    width: 100px;
+    width: 150px;
     height: 30px;
     background-color: #f8b712;
     text-align: center;
     border-radius: 3px;
-    margin-left: 40px !important;
+    margin-left: 30px !important;
 }
 .visit a {
     text-decoration: none;
@@ -562,34 +597,37 @@ div[class*="long60"] {
 .tech {
     position: relative;
     display: inline-block;
-    background-color: #bba597;
+    background-color: #b6ad79;
     color: #000;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     margin-top: 10px;
-    width: 70px;
+    width: 100px;
     height: 20px;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 20px;
     text-align: center;
-    border-radius: 10px;
-    margin-right: 20px !important;
+    border-radius: 5px;
+    margin-left: 15px !important;
 }
 .tech:hover {
     cursor: default;
-    background-color: #dac7a0;
+    background-color: #77704d;
     box-shadow: none;
 }
 .accordion .content {
+    color: #fff;
     position: absolute;
     top: 40px;
-    left: 10px;
+    left: 15px;
     height: 180px;
-    width: 380px;
-    background-color: rgba(0, 0, 0, 0.8);
+    width: 580px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 5px;
     padding: 20px;
+    text-align: center;
 }
 /* ------------------------------------------------------------------------*/
 .container4 {
@@ -603,14 +641,14 @@ div[class*="long60"] {
 .P4 {
     display: none;
 }
-.coding_Challenges {
+.my_work {
     cursor: default;
-    font-size: 70px;
+    font-size: 100px;
     font-weight: 600;
     letter-spacing: 3px;
     position: absolute;
-    top: 10px;
-    left: 270px;
+    top: -30px;
+    left: 360px;
 }
 .long604 {
     width: 470px !important;
@@ -644,44 +682,27 @@ div[class*="long60"] {
     letter-spacing: 1px;
     width: 770px;
     height: 300px;
-    float: right;
-    top: 200px;
-    left: 50px;
+    margin-top: 150px;
+    margin-left: 100px;
 }
-.textChallenges h4.education {
-    color: #f8b712 !important;
-    display: inline-block;
-}
-.cert2 {
-    position: relative;
-    left: 480px;
-}
-.container4 h2 {
-    position: relative;
-    color: #20cef5 !important;
-    margin-bottom: 10px;
-    font-size: 20px;
-    width: 900px;
-    top: 140px;
-    margin-left: 300px;
+.tools {
+    position: absolute;
+    right: 90px;
+    top: 130px;
+    width: 350px;
+    height: 319px;
+    z-index: -1;
 }
 .textChallenges h4 {
     display: block;
     margin: 10px 0px;
-    color: #57b1ae;
+    color: #f8b712;
     margin-left: -40px;
 }
-.textChallenges h5 {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #f5c592;
-    margin-left: -10px;
-    font-weight: 600;
-}
 .textChallenges h6 {
-    margin: 5px 0px 20px 0px;
-    font-size: 13px;
-    line-height: 1.2;
+    margin: 5px 0px 0px 0px;
+    font-size: 14px;
+    line-height: 1.4;
     color: #e7dec8;
     margin-left: -10px;
     width: 470px;
@@ -709,9 +730,11 @@ div[class*="long60"] {
 }
 .blocAnim {
     z-index: 1000;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    width: 1070px;
+    height: 430px;
+    margin-left: 0px;
+    position: absolute;
+    top: 180px;
 }
 .showCertificate {
     display: none;
@@ -759,12 +782,12 @@ div[class*="long60"] {
 }
 ._contact {
     cursor: default;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 600;
     letter-spacing: 3px;
     position: absolute;
-    top: 0px;
-    left: 740px;
+    top: -20px;
+    left: 760px;
 }
 .long606 {
     width: 40px !important;
@@ -779,10 +802,10 @@ div[class*="long60"] {
 }
 .down604 {
     position: relative;
-    top: -310px;
+    top: -280px;
     float: left;
     left: 360px !important;
-    height: 401px !important;
+    height: 371px !important;
 }
 .back_to_top {
     float: right;
@@ -805,6 +828,7 @@ div[class*="long60"] {
     margin-top: 170px;
 }
 .textContact h5{
+    font-weight: 400;
     font-size: 15px;
     word-spacing: 3px;
     letter-spacing: 3px;
@@ -814,7 +838,7 @@ div[class*="long60"] {
     margin-top: 0px;
 }
 .text2 {
-    margin-left: 200px;
+    margin-left: 220px;
 }
 .text3 {
     margin-left: 220px;
@@ -874,7 +898,7 @@ input::placeholder, textarea::placeholder {
 .bownload {
     position: absolute;
     top: 280px;
-    left: 930px;
+    left: 965px;
     width: 150px;
     height: 35px;
     background-color: #FBC900;
@@ -909,4 +933,37 @@ input::placeholder, textarea::placeholder {
     z-index: 2000;
     color: #d8c6b6;
     box-shadow: 0 0 1px #000;
+}
+.mobile {
+    display: none;
+}
+.mobile h2 {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30vh;
+    width: 80vw;
+}
+
+@media (max-width: 768px){
+    .container1 {
+        display: none;
+    }
+    .photo {
+        display: none;
+    }
+    .pages, .menu {
+        display: none;
+    }
+    .menuIcon {
+        pointer-events: none;
+    }
+    .logo {
+        pointer-events: none;
+    }
+    .mobile {
+        display: block;
+    }
 }

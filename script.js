@@ -140,9 +140,9 @@ function moveTop() {
 }
 
 function changeHeight() {
-    line.style.height= "400px";
+    line.style.height= "370px";
     setTimeout( () => {
-        line.style.height= "785px";
+        line.style.height= "755px";
     }, 2000);
 }
 

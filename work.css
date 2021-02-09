@@ -1,11 +1,11 @@
 .accordion {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 690px;
+  font-family: sans-serif;
+  width: 955px;
   float: right;
   height: 340px;
   overflow: hidden;
   margin: 20px;
-  margin-right: 0px;
+  margin-right: 15px;
 }
 .accordion ul {
   width: 100%;
@@ -33,7 +33,7 @@
   display: block;
   height: 340px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 3;
   padding: 10px 20px 15px 20px;
@@ -55,16 +55,19 @@
   overflow: visible;
   opacity: 1;
   text-overflow: clip;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3px;
   margin-bottom: 2px;
   top: 100px;
-  left: -230px;
+  left: -232px;
   width: 437px;
+  height: 25px;
   transform: rotate(-90deg);
-  color: #000;
-  padding-left: 7px;
-  background-color: #f8b712;
+  color: #f8b712;
+  padding-left: 20px;
+  padding-top: 8px;
+  background-color: #000;
 }
 .accordion ul li .div .a p {
   position: absolute;
@@ -77,12 +80,6 @@
   font-weight: normal;
   letter-spacing: 0px;
   word-spacing: 2px;
-}
-.accordion ul li .div .a h5 {
-  font-weight: 700;
-  color: #cac032;
-  font-size: 16px;
-  margin-bottom: 10px;
 }
 .accordion ul li .div .a h6 {
   line-height: 1.4;
@@ -134,7 +131,7 @@
   width: 60% !important;
 }
 .accordion ul:hover li:hover .a {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
 }
 .accordion ul:hover li:hover .a * {
   opacity: 1 !important;
@@ -144,8 +141,10 @@
 .accordion ul:hover li:hover .a h2 {
   top: 20px;
   left: 10px;
-  width: 413px;
-  border-radius: 2px;
+  width: 603px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: 600px) {
