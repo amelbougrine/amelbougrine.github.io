@@ -122,6 +122,7 @@ function moveLeft() {
     addAnimation(P4, "slideOutRight");
     show(P5);
     hideDelay(P4, 2000);
+    show(blocAnim);
     hideMenu();
     circle(5);
 }

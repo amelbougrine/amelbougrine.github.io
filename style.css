@@ -125,6 +125,12 @@ main {
     word-spacing: 3px;
     letter-spacing: 4px;
 }
+.firstH1 {
+    margin-bottom: 10px !important;
+}
+.secndH1 {
+    margin-top: 0px !important;
+}
 .intreducton h6, .textAboutMe h6, .projectDetail h6 {
     font-size: 14px;
     font-weight: normal;
@@ -229,7 +235,7 @@ div[class*="down"] {
     top: 205px;
     left: -40px;
     width: 90px;
-    height: 200px;
+    height: 190px;
     line-height: 89px;
     background-color: #0c141a;
     z-index: 3;
@@ -448,7 +454,7 @@ div[class*="long60"] {
     word-spacing: 3px;
     letter-spacing: 3px;
     width: 380px;
-    margin-left: 20px;
+    margin-left: 35px;
 }
 .personality div {
     position: relative;
@@ -508,12 +514,12 @@ div[class*="long60"] {
     left: 320px;
 }
 .long602 {
-    width: 1225px !important;
+    width: 905px !important;
     top: 472px !important;
     left: -500px;
 }
 .long603 {
-    width: 70px !important;
+    width: 390px !important;
     top: 472px !important;
     right: 30px;
     margin-right: 0px !important;
@@ -530,7 +536,7 @@ div[class*="long60"] {
     width: 360px;
     position: absolute;
     top: 474px;
-    margin-left: 760px;
+    margin-left: 440px;
 }
 .projectsContainer {
     width: 1070px;
@@ -732,9 +738,10 @@ div[class*="long60"] {
     z-index: 1000;
     width: 1070px;
     height: 430px;
-    margin-left: 0px;
+    margin: 0px;
     position: absolute;
     top: 180px;
+    left: 0px
 }
 .showCertificate {
     display: none;
