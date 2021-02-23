@@ -1,8 +1,13 @@
+
+
+
 // ****** constants & variables
 
 var page = 1;
 
 const menu = document.querySelector(".menu")
+const menuIcon = document.querySelector(".menuIcon");
+menuIcon.style.backgroundImage = `url("images/menu.png")`;
 
 const circle1 = document.querySelector(".circle1");
 const circle2 = document.querySelector(".circle2");
@@ -33,6 +38,15 @@ const listCerti = ["url('images/certi1.jpeg')", "url('images/certi2.jpeg')", "ur
 // ****** functions
 
 function showHideMenu() {
+    console.log('hhh', menuIcon.style.backgroundImage);
+
+    if (menuIcon.style.backgroundImage == `url("images/menu.png")`) {
+        console.log('menu');
+        menuIcon.style.backgroundImage = `url("images/close.png")`;
+    } else {
+        console.log('close' );
+        menuIcon.style.backgroundImage = `url("images/menu.png")`;
+    }
     switchList(menu, "show");
 }
 
@@ -42,6 +56,8 @@ function switchList(element, list) {
 
 function hideMenu() {
     menu.classList.remove("show");
+    menuIcon.style.backgroundImage = `url("images/menu.png")`;
+
 }
 
 function circle(num) {
@@ -95,10 +111,10 @@ function moveDown1() {
 function moveRight() {
     page = 3;
     addAnimation(P2, "slideOutLeft");
-    addAnimation(photo, "slideoutPhoto");
+    // addAnimation(photo, "slideoutPhoto");
     addAnimation(P3, "slideinright");
     show(P3);
-    hideDelay(photo, 2000);
+    // hideDelay(photo, 2000);
     hideDelay (P2, 2000);
     hideMenu();
     circle(3);
@@ -130,10 +146,10 @@ function moveLeft() {
 function moveTop() {
     page = 1;
     addAnimation(P1, "slideInDown");
-    addAnimation(photo, "slideinPhoto");
+    // addAnimation(photo, "slideInDownPhoto");
     addAnimation(P5, "slideOutDown");
     show(P1);
-    showDelay(photo, 1000);
+    show(photo);
     hideDelay(P5, 2000);
     changeHeight();
     hideMenu();
@@ -158,8 +174,7 @@ function menuPage(num) {
     addAnimation(pages[num-1], "zoomIn");
     show(pages[num-1]);
     circle(num);
-    if (num==1 || num ==2) {
-        addAnimation(photo, "zoomIn");
+    if (num==1) {
         show(photo);
     }
     if (num==4) {
