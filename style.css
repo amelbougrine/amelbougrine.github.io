@@ -572,13 +572,13 @@ div[class*="long60"] {
 .visit {
     position: relative;
     display: inline-block;
-    top: 40px;
+    top: 30px;
     width: 150px;
     height: 30px;
     background-color: #e6cf39;
     text-align: center;
     border-radius: 3px;
-    margin-left: 30px !important;
+    margin-left: 20px !important;
 }
 .visit a {
     text-decoration: none;
@@ -610,7 +610,7 @@ div[class*="long60"] {
     line-height: 20px;
     text-align: center;
     border-radius: 5px;
-    margin-left: 15px !important;
+    margin-left: 10px !important;
 }
 .tech:hover {
     cursor: default;
@@ -621,14 +621,17 @@ div[class*="long60"] {
     color: #fff;
     position: absolute;
     top: 40px;
-    left: 15px;
+    left: 5px;
     height: 180px;
-    width: 580px;
-    margin: 0 auto;
+    width: 500px;
+    margin: 0 auto !important;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 5px;
     padding: 20px;
     text-align: center;
+}
+.divVisit {
+    margin: 0 auto;
 }
 /* ------------------------------------------------------------------------*/
 .container4 {

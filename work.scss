@@ -24,7 +24,7 @@ $text-offset: $a-height - 90;
       display:table-cell;
       vertical-align:bottom;
       position: relative;
-      width:25%; // 6 into 100
+      width:20%; // 6 into 100
       height:$a-height;
       background-repeat:no-repeat;
       background-position:center center;
@@ -92,7 +92,7 @@ $text-offset: $a-height - 90;
             top: 50px;
             left: 20px;
             font-size: 13.5px;
-            width: 437px;
+            width: 337px;
           }
           h5, h6, span {
             font-weight: normal;
@@ -138,8 +138,15 @@ $text-offset: $a-height - 90;
       background-attachment: scroll;
       background-repeat: no-repeat;
       background-size: cover;
+      border-right: 15px solid #000; 
+    }
+    li:nth-child(5) { 
+      background-image:url('images/work1.jpeg');
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      background-size: cover;
       border-right: 15px solid #000;
-  }
+    }
 
     &:hover li,
     &:focus-within li { width:8%; }
@@ -185,7 +192,7 @@ $text-offset: $a-height - 90;
         background:rgba(0,0,0,.3);
         margin-left: 0px;
         padding-left: 10px;
-        
+                
         * {
           
           opacity:1 !important;
@@ -195,8 +202,9 @@ $text-offset: $a-height - 90;
         }
         h2 {
           top: 20px;
-          left:13px;
-          width: 600px;
+          left: 5px;
+          margin: 0 auto;
+          width: 520px;
           border-radius: 5px;
           text-align: center;
           color: #faeb64;

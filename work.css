@@ -18,7 +18,7 @@
   display: table-cell;
   vertical-align: bottom;
   position: relative;
-  width: 25%;
+  width: 20%;
   height: 340px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -76,7 +76,7 @@
   top: 50px;
   left: 20px;
   font-size: 13.5px;
-  width: 437px;
+  width: 337px;
 }
 .accordion ul li .div .a h5, .accordion ul li .div .a h6, .accordion ul li .div .a span {
   font-weight: normal;
@@ -117,6 +117,13 @@
   background-size: cover;
   border-right: 15px solid #000;
 }
+.accordion ul li:nth-child(5) {
+  background-image: url("images/work1.jpeg");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right: 15px solid #000;
+}
 .accordion ul:hover li, .accordion ul:focus-within li {
   width: 8%;
 }
@@ -145,8 +152,9 @@
 }
 .accordion ul:hover li:hover .a h2 {
   top: 20px;
-  left: 13px;
-  width: 600px;
+  left: 5px;
+  margin: 0 auto;
+  width: 520px;
   border-radius: 5px;
   text-align: center;
   color: #faeb64;
