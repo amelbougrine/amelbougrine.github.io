@@ -1,277 +1,596 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175465184-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());        
-          gtag('config', 'UA-175465184-1');
-        </script>
-        <link rel="icon" type="image/jpeg" href="images/logo.jpg">
-        <meta property='og:title' content='Amel Bougrine'/>
-        <meta property='og:image' content='images/image.jpeg'/>
-        <meta property='og:description' content='Front-End Developer & UI/UX Designer'/>
-        <meta property='og:url' content='https://amelbougrine.github.io/'/>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Amel Bougrine</title>
-        <!-- <meta name="keywords" content=" demo" /> -->
-        <meta name="author" content="Amel Bougrine" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link href="contact2.css" type="text/css" rel="stylesheet">
-        <link href="contact.css" type="text/css" rel="stylesheet">
-        <link href="work.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-        <main>
-            <!-- <div class="main"></div> -->
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo"/>
-            </div>
-            <div class="menuIcon" onclick="showHideMenu()"></div>
-            <div class="menu">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175465184-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());        
+      gtag('config', 'UA-175465184-1');
+    </script>
+    <link rel="icon" type="image/jpeg" href="assets/logo.png">
+    <meta property='og:title' content='Amel Bougrine'/>
+    <meta property='og:image' content='assets/image.png'/>
+    <meta property='og:description' content='Front-End Developer & UI/UX Designer'/>
+    <meta property='og:url' content='https://amelbougrine.github.io/'/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amel Bougrine</title>
+    <!-- <meta name="keywords" content=" demo" /> -->
+    <meta name="author" content="Amel Bougrine" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style-text.css" />
+    <link rel="stylesheet" type="text/css" href="drop-menu-style.css" />
+  </head>
+  <body>
+    <!-- Pages -->
+    <!-- <div id="fullpage"> -->
+      <section id="item1" class="page1">
+        <div class="green-circle"></div>
+        <div class="blur-circle"></div>
+        <img  class="photo" src="assets/photo.png" alt="photo">
+        <h1>Design</h1>
+        <div class="text-area">
+          <h3>Hello,</h3>
+          <h3>I am Amel<h3>
+          <h2>I am a web Designer</h2>
+          <h6>And I'm here to make your project a success.</h6>
+          <a href="#item2">
+            <div class="section">
+              <div class="number">
+                <h2>01</h2>
+                <h2>01</h2>
+              </div>            
+              <nav style="margin-left: -10px;">
                 <ul>
-                    <li onclick="menuPage(1)"><NOBR>Main Page</NOBR></li>
-                    <li onclick="menuPage(2)"><NOBR>About Me</NOBR></li>
-                    <li onclick="menuPage(3)"><NOBR>My Skills</NOBR></li>
-                    <li onclick="menuPage(4)"><NOBR>My Work</NOBR></li>
-                    <li onclick="menuPage(5)">Contact</li>
+                <li class="title">About Me
+                  <ul class="drop-menu menu-2">
+                    <li>Biography</li>
+                    <li>Services</li>
+                    <li>Resume</li>
+                  </ul>
+               </li>
                 </ul>
+              </nav>
             </div>
-            <div class="pages">
+          </a>
+          <a href="#item3">
+            <div class="section">
+              <div class="number">
+                <h2>02</h2>
+                <h2>02</h2>
+              </div>
+              <nav>
                 <ul>
-                    <li class="circle1" onclick="menuPage(1)"><div></div></li>
-                    <li class="circle2" onclick="menuPage(2)"></li>
-                    <li class="circle3" onclick="menuPage(3)"></li>
-                    <li class="circle4" onclick="menuPage(4)"></li>
-                    <li class="circle5" onclick="menuPage(5)"></li>
+                <li class="title">Portfolio
+                  <ul class="drop-menu menu-2">
+                    <li>Ui/Ux Design</li>
+                    <li>Integration</li>
+                    <li>SEO Audit</li>
+                  </ul>
+               </li>
                 </ul>
+              </nav>
             </div>
-            <div class="mobile">
-              <h2>Thank you for visiting my website.<br><br>The mobile version is under construction. <br><br>Please open the website on a Labtop or larger screen.</h2>
+          </a>
+          <a href="#item4">
+            <div class="section">
+              <div class="number">
+                <h2>03</h2>
+                <h2>03</h2>
+              </div>            
+              <nav>
+                <ul>
+               <li class="title">Contact
+                  <ul class="drop-menu menu-2">
+                    <li>Phone/Mail</li>
+                    <li>Social Links</li>
+                    <li>Offer a Job</li>
+                  </ul>
+               </li>
+                </ul>
+              </nav>
             </div>
-            
-            <div class="container1 P1">
-                <div class="textContainer">
-                    <div class="hello">
-                        <div class="line"></div>
-                        <h2>HELLO, I AM AMEL</h2>
+          </a>
+        </div>
+      </section>
+      
+      <section id="item2" class="page2">
+        <div class="green-circle"></div>
+        <div class="blur-circle"></div>
+        <div class="menu-section">
+          <a href="#item1">
+          <div class="section">
+            <div class="number">
+              <h3>00</h3>
+            </div>            
+            <nav>
+              <ul>
+               <li class="title">Home</li>
+              </ul>
+            </nav>
+          </div></a>
+          <a href="#item2">
+          <div class="section">
+            <div class="number active-number">
+              <h3 style="letter-spacing: 8px;">01</h3>
+            </div>            
+            <nav>
+              <ul class="active-ul">
+               <li class="title active-title">About Me</li>
+              </ul>
+            </nav>
+          </div></a>
+          <a href="#item3">
+          <div class="section">
+            <div class="number">
+                <h3>02</h3>
+            </div>
+            <nav>
+              <ul>
+               <li class="title">Portfolio</li>
+              </ul>
+            </nav>
+          </div></a>
+          <a href="#item4">
+          <div class="section">
+            <div class="number">
+              <h3>03</h3>
+            </div>            
+            <nav>
+              <ul>
+               <li class="title">Contact</li>
+              </ul>
+            </nav>
+          </div></a>
+        </div>
+
+        <div class="text-area">
+          <h2><span><span style="font-size: 50px;">.</span>About</span> me</h2>
+          <p>I am Amel Bougrine, I’m a Ui/Ux Designer and Front-end Developer with a background in electronic engineering.</p>
+          <p>I design and build websites, I’m fluent in HTML and CSS, and pretty handy with Javascript.<br>I provide my clients with full web strategy consultancy, including SEO and social media strategy.</p>
+          <p>My focus lately has been helping small businesses get started on the internet by designing and building websites that are professional and clean.</p>
+        </div>
+        
+        <div class="services-container">
+          <div class="wrap">
+            <h2>What I can do for you</h2>
+
+            <div class="gallery-wrap">
+              <ul id="filters">
+                <li onclick="showServices('Design')"><span class="span active">Design</span></li>
+                <li onclick="showServices('Front')"><span class="span">Front-End</span></li>
+                <li onclick="showServices('Seo')"><span class="span">SEO</span></li>
+              </ul>
+ 
+              <ul class="drop-menu service active">
+                <li>&#9900; &nbsp;Wireframing/Prototyping.</li>
+                <li>&#9900; &nbsp;User Research.</li>
+                <li>&#9900; &nbsp;Information Architecture.</li>
+                <li>&#9900; &nbsp;CRM Software Design.</li>
+                <li>&#9900; &nbsp;UX/UI (desktop & mobile).</li>
+                <li>&#9900; &nbsp;Responsive Design.</li>
+              </ul>
+              <ul class="drop-menu service">
+                <li>&#9900; &nbsp;Coding interactive layouts.</li> 
+                <li>&#9900; &nbsp;Custom features and animations.</li> 
+                <li>&#9900; &nbsp;Cross-Browser Development.</li> 
+                <li>&#9900; &nbsp;Content Management Systems.</li> 
+                <li>&#9900; &nbsp;RESTful Services/APIs.</li> 
+                <li>&#9900; &nbsp;Small and medium web app with React.</li> 
+                <li>&#9900; &nbsp;Testing/Debugging.</li> 
+              </ul>
+              <ul class="drop-menu service">
+                <li>&#9900; &nbsp;Optimizing web pages for maximum speed.</li>
+                <li>&#9900; &nbsp;Audit website performance.</li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <a href="assets/CV_Amel-Bougrine_Front-End_&_UI-UX.pdf" target="_blank" download>
+        <div class="cv-container">
+          <button class="download-CV">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Download CV</span>
+          </button>
+        </div></a>
+        
+      </section>
+
+      <section id="item3"class="page3">
+        <div class="menu-section">
+          <a href="#item1">
+          <div class="section">
+            <div class="number">
+              <h3>00</h3>
+            </div>            
+            <nav>
+              <ul>
+               <li class="title">Home</li>
+              </ul>
+            </nav>
+          </div></a>
+          <a href="#item2">
+          <div class="section">
+            <div class="number">
+              <h3 style="letter-spacing: 8px;">01</h3>
+            </div>            
+            <nav>
+              <ul>
+               <li class="title">About Me</li>
+              </ul>
+            </nav>
+          </div></a>
+          <a href="#item3">
+          <div class="section">
+            <div class="number active-number">
+                <h3>02</h3>
+            </div>
+            <nav>
+              <ul class="active-ul">
+               <li class="title active-title">Portfolio</li>
+              </ul>
+            </nav>
+          </div></a>
+          <a href="#item4">
+          <div class="section">
+            <div class="number">
+              <h3>03</h3>
+            </div>            
+            <nav>
+              <ul>
+               <li class="title">Contact</li>
+              </ul>
+            </nav>
+          </div></a>
+        </div>
+
+        <div class="portfolio-container">
+          <div class="wrap">
+            <h2>My Recent Work</h2>
+            <div class="gallery-wrap">
+              <ul id="filters" class="clearfix">
+                <li><span class="filter" data-filter=".Design">Design</span></li>
+                <li><span class="filter" data-filter=".Front-End">Front-End</span></li>
+                <li><span class="filter" data-filter=".Newsletter">Newsletter</span></li>
+                <li><span class="filter" data-filter=".Audit">Audit</span></li>
+              </ul>
+              <div id="gallery">
+                <a class="gallery-item Newsletter" href="https://www.behance.net/gallery/123678263/Newsletter" target="_blanc" data-cat="Newsletter">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Data Reporting Newsletter</h2>
+                        <h6></h6>
+                        <p>View Design</p>
+                      </div>
                     </div>
-                    <div class="intreducton">
-                        <h1 class="firstH1">I'M A <span class="goldenText">FRONT-END</span> DEVELOPER</h1>
-                        <h1 class="secndH1">& <span class="goldenText">UI/UX</span> DESIGNER</h1>
-                        <h6>Are you looking for a developer who works hard but stays humble ?</h6>
+                    <div class="overlay"></div>
+                    <img src="assets/design-1.png" alt="money" />
+                  </div>
+                </a>
+                <a class="gallery-item Front-End" href="https://amelbougrine.github.io/Travel/" target="_blanc" data-cat="Front-End">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Responsive<br>Landing Page</h2>
+                        <h6>Using Javascript for mobile Responsiveness</h6>
+                        <p>View Live</p>
+                      </div>
                     </div>
-                    <div class="explore move" onclick="moveDown1()">
-                        <h4>EXPLORE &#62; </h4>
+                    <div class="overlay"></div>
+                    <img src="assets/design-12.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Newsletter" href="https://amelbougrine.github.io/Newsletter-MD/" target="_blanc" data-cat="Newsletter">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Email-Template for commerce businesses</h2>
+                        <h6></h6>
+                        <p>View Live</p>
+                      </div>
                     </div>
-                    <div class="line long"></div>
-                    <div class="line down"></div>
-                </div>
-                <div class="photo lightTr">
-                  <img src="images/logoimg00.png"/>
-                </div>
-            </div> 
-            <div class="container2 P2">
-              <div class="about_Me"> About Me</div>
-              <div class="line down60"></div>
-              <div class="line long60"></div>
-              <div class="mySkills move" onclick="moveRight()">
-                <h4>MY SKILLS &#62; </h4>
-              </div>
-              <div class="line long601"></div>
-              <div class="textAboutMe">
-                <h3><NOBR>I'M <span class="goldenText">AMEL BOUGRINE</span></NOBR></h3>
-                <h6>Creative Front-End Developer residing in Tunis Tunisia. Highly skilled in HTML, CSS, JavaScript and React, and passionate about Web Design and everything in its orbit.</h6>
-                <h6>Independent and well-organized person with hight attention to detail, and available for full-time or part-time job.</h6>
-                <h6 style="margin-left: 40px;">Interested ? Check out my skills.</h6>
-              </div>
-              <div class="picture">
-                <img src="images/photo1.jpg" alt="photo">
-              </div>
-              <div class="frame"></div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-11.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Front-End" href="https://amelbougrine.github.io/Minimalista/" target="_blanc" data-cat="Front-End">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Landing Page for Design Agency</h2>
+                        <h6>Responsive and minimalist design</h6>
+                        <p>View Live</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-10.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Design" href="https://www.behance.net/gallery/122652859/Money-Management" target="_blanc" data-cat="Design">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Money Management Dashboard</h2>
+                        <h6></h6>
+                        <p>View Design</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-5.png" alt="" />
+                  </div>
+                </a> 
+                <a class="gallery-item Design" href="https://www.behance.net/gallery/126429781/Landing-Page" target="_blanc" data-cat="Design">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Furniture Landing Page</h2>
+                        <h6></h6>
+                        <p>View Design</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-3.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Front-End" href="https://amelbougrine.github.io/Travel-Agency" target="_blanc" data-cat="Front-End">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Travel Agency Web Design</h2>
+                        <h6>Using bootstrap for responsive design</h6>
+                        <p>View Live</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-15.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Design" href="https://www.behance.net/gallery/122523561/Fashion-Ecomerce" target="_blanc" data-cat="Design">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Fashion Ecommerce Landing Page</h2>
+                        <h6></h6>
+                        <p>View Design</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-4.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Design" href="https://www.behance.net/gallery/126189331/Landing-Page" target="_blanc" data-cat="Design">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Home Page Design for Online Marketplace</h2>
+                        <h6></h6>
+                        <p>View Design</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-2.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Design" href="https://www.behance.net/gallery/122491043/Real-Estate-USA" target="_blanc" data-cat="Design">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Real Estate Agency</h2>
+                        <p>View Design</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-6.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Audit" href="assets/Rapport-Performance-Digimoov-fr.pdf" target="_blanc" data-cat="Audit">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Website Performance Report (Fr)</h2>
+                        <h6>Analyze problems and develop actions to be implemented</h6>
+                        <p>View report</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-14.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Design"href="https://www.behance.net/gallery/122707287/Finances-Management-App" target="_blanc" data-cat="Design">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Design for Money Management Mobile App</h2>
+                        <h6></h6>
+                        <p>View Design</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-13.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Newsletter" href="https://amelbougrine.github.io/Newsletter-BF/" target="_blanc" data-cat="Newsletter">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Email-Template for commerce businesses</h2>
+                        <h6></h6>
+                        <p>View Live</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-7.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Newsletter" href="https://amelbougrine.github.io/Newsletter-Context/" target="_blanc" data-cat="Newsletter">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Email-Template for Marketing Campaign</h2>
+                        <h6></h6>
+                        <p>View Live</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-8.png" alt="" />
+                  </div>
+                </a>
+                <a class="gallery-item Front-End" href="https://amelbougrine.github.io/Fitness-App/" target="_blanc" data-cat="Front-End">
+                  <div class="inside">
+                    <div class="details">
+                      <div class="text">
+                        <h2>Fitness App</h2>
+                        <h6>Interactive design in mobile view presentation</h6>
+                        <p>View Live</p>
+                      </div>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="assets/design-9.png" alt="" />
+                  </div>
+                </a>
+
+              </div><!--/gallery-->
+            </div><!--/gallery-wrap-->
+          </div><!--/wrap-->
+        </div><!--/portfolio-container-->
+      </section>
+
+      <section id="item4" class="page4">
+        <div class="menu-section">
+          <a href="#item1">
+          <div class="section">
+            <div class="number">
+              <h3>00</h3>
+            </div>            
+            <nav>
+              <ul>
+               <li class="title">Home</li>
+              </ul>
+            </nav>
+          </div></a>
+          <a href="#item2">
+          <div class="section">
+            <div class="number">
+              <h3 style="letter-spacing: 8px;">01</h3>
+            </div>            
+            <nav>
+              <ul>
+               <li class="title">About Me</li>
+              </ul>
+            </nav>
+          </div></a>
+          <a href="#item3">
+          <div class="section">
+            <div class="number">
+                <h3>02</h3>
             </div>
-            <div class="container3 P3">
-              <div class="my_skills"><NOBR>My Skills</NOBR></div>
-              <div class="line long602"></div>
-              <div class="codingChallenge move" onclick="moveDown2()">
-                <h4>MY WORK &#62; </h4>
-              </div>             
-              <div class="line long603"></div> 
-              <div class="line down601"></div>
-              <h2 class="education ed2">I'm here to serve you and make your project a success</h2> 
-              <!-- <img class="tools" src="images/tools.png" alt="tools"> -->
-              <div class="textChallenges">
-                  <h3 class="education ed22">Here are the services I provide and the tools I use:</h2> 
-                  <h4>Front-End Development:</h4>
-                    <h6>- Coding interactive layouts
-                    <br>- Custom pluging, features and animations
-                    <br>- Cross-Browser Development
-                    <br>- Content Management Systems
-                    <br>- RESTful Services/APIs
-                    <br>- Building small and medium web app with React
-                    <br>- Testing/Debugging
-                    </h6>
-                  <h4>Design:</h4>
-                  <h6>- Art Direction
-                    <br>- Branding
-                    <br>- Information Architecture
-                    <br>- UX/UI (desktop & mobile)
-                    <br>- Responsive Design
-                  </h6>
+            <nav>
+              <ul>
+               <li class="title">Portfolio</li>
+              </ul>
+            </nav>
+          </div></a>
+          <a href="#item4">
+          <div class="section">
+            <div class="number active-number">
+              <h3>03</h3>
+            </div>            
+            <nav>
+              <ul class="active-ul">
+               <li class="title active-title">Contact</li>
+              </ul>
+            </nav>
+          </div></a>
+        </div>
+
+        <div class="contact-container">
+          <div class="form-container">
+            <div class="left-container">
+              <div class="left-inner-container">
+                <h2>Let's Get In Touch</h2>
+                <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                <hr>
+                <div class="address-container">
+                  <div class="address">
+                    <i class="icon fas fa-map-marker-alt"></i>
+                    <p>Tunis, Tunisia (UTC+1)</p>
+                  </div>
+                  <div class="phone">
+                    <i class="icon fas fa-phone"></i>
+                    <p>+216 23 946 046</p>
+                  </div>
+                  <div class="mail">
+                    <i class="icon fas fa-envelope"></i>
+                    <p>amel.1989ab@gmail.com</p> 
+                  </div>
+                </div>
+                <hr>
+                <div class="social-container">
+                  <a href="https://www.linkedin.com/in/amelbougrine/" target="_blanc">
+                    <span class="fa-stack fa-lg tw combo">
+                      <i class="fa fa-circle fa-stack-2x circle"></i>
+                      <i class="fa fa-linkedin fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                  </a>
+                  <a href="https://www.behance.net/amelbougrine" target="_blanc">
+                    <span class="fa-stack fa-lg yt combo">
+                      <i class="fa fa-circle fa-stack-2x circle"></i>
+                      <i class="fa fa-behance fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                  </a>
+                  <a href="https://github.com/amelbougrine" target="_blanc">
+                    <span class="fa-stack fa-lg tw combo">
+                      <i class="fa fa-circle fa-stack-2x circle"></i>
+                      <i class="fa fa-github fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                  </a>
+                  <a href="https://codepen.io/Amel-Bgr" target="_blanc">
+                    <span class="fa-stack fa-lg gt combo">
+                      <i class="fa fa-circle fa-stack-2x circle"></i>
+                      <i class="fa fa-codepen fa-stack-1x fa-inverse icon"></i>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <div class="contactContainer2"> 
-                <div class="badge2 b2-1">
-                    <div class="text">JS</div>
-                </div>
-                <div class="badge2 b2-2">
-                    <div class="text">React</a></div>
-                </div>
-                <div class="badge2 b2-3">
-                    <div class="text">CSS</a></div>
-                </div>
-                <div class="badge2 b2-4">
-                    <div class="text">SASS</a></div>
-                </div>
-                <div class="badge2 b2-5">
-                  <div class="text">BStrap</div>
-                </div>
-                <div class="badge2 b2-6">
-                  <div class="text">JQuery</a></div>
-                </div>
-                <div class="badge2 b2-7">
-                  <div class="text">Adobe</a></div>
-                </div>
-                <div class="badge2 b2-8">
-                  <div class="text">Git</a></div>
-                </div>
             </div>
-            </div>
-            <div class="container4 P4">
-                <div class="my_work"><NOBR>My Work</NOBR></div>
-                <div class="line down603"></div>
-                <div class="line long604"></div>
-                <div class="contact move" onclick="moveLeft()">
-                    <h4> &#60; CONTACT  </h4>
-                </div>             
-                <div class="line long605"></div>
-                <h2 class="education">Here are selection of my recent projects<br> For more informations, visit my Github profile or contact me.</h2> 
-                <div class="blocAnim"></div>
-                <div class="projectsContainer"> 
-                  <div class="accordion">
-                    <ul>
-                      <li tabindex="1">
-                        <div class="div">
-                          <div class="a">
-                            <h2>SEO Performance Report</h2>
-                            <div class="content">
-                              <h6>Analyze and audit the performance of the website <a style="color: wheat;" href="https://www.digimoov.fr/">www.digimoov.fr</a> and Inspect and identify errors and give feedback about different points to optimize, remove or add.<br><br></h6>
-                              <div class="visit"><a href="images/Rapport_Test_Digimoov.pdf" target="_blank">See Report</a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li tabindex="2">
-                        <div class="div">
-                          <div class="a">
-                            <h2>Data Visualization App</h2>
-                            <div class="content">
-                              <h6>Creating an Office integration solution where users can set up visualization tools on Excel Online
-                                to generate automatic dashboards that track company performance across key
-                                indicators and visually interpret the results.</h6>
-                              <div class="tech">Office Js</div><div class="tech">Typescript</div><div class="tech">XML</div><div class="tech">HTML / CSS</div>
-                              <div class="visit"><a href="images/work0.jpeg" target="_blank">See Screenshot</a></div>
-                              <div class="visit"><a href="https://github.com/amelbougrine/Add-in_Office_Js" target="_blank">See Code</a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li tabindex="3">
-                        <div class="div">
-                          <div class="a">
-                            <h2>E-commerce Website Design</h2>
-                            <div class="content">
-                              <h6>Designing an E-commerce website that helps creative kids to sell their handmade product and grow their online business, the goal was to provide great user experience in order to convince visitors to make a purchase and convince kids to become sellers. </h6>
-                              <div class="visit"><a href="images/HOME_PAGE_V1-0.png" target="_blank">Home Page Design</a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li tabindex="4">
-                        <div class="div">
-                          <div class="a">
-                            <h2>Training Center Website</h2>
-                            <div class="content">
-                              <h6>Create a responsive showcase website and develop a marketing and branding strategy for Language Training Center.<br><br></h6>
-                              <div class="tech">Javascript</div><div class="tech">HTML</div><div class="tech">CSS</div><div class="tech">Bootstrap</div>
-                              <div class="visit"><a href="https://amelbougrine.github.io/walkeracademy/" target="_blank">See Demo</a></div>
-                              <div class="visit"><a href="https://github.com/amelbougrine/walkeracademy" target="_blank">See Code</a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li tabindex="5">
-                        <div class="div">
-                          <div class="a">
-                            <h2>Real-Estate Website Design</h2>
-                            <div class="content">
-                              <h6>Real estate websites have to be designed to build trust, The buyer has to trust that the real estate agency cares as much about their investment as they do.
-                                A website’s goals depend on the kind of company it’s for.<h6>
-                              <div class="tech">Adobe XD</div><div class="tech">Adobe Ps</div>
-                              <div class="divVisit">
-                                <div class="visit"><a href="images/work3.pdf" target="_blank">Home Page Design</a></div>
-                                <div class="visit"><a href="https://amelbougrine.github.io/Integration/" target="_blank">Integration</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div> 
-                </div>
-            </div>
-            <div class="container5 P5">
-                <div class="_contact"><NOBR>Contact</NOBR></div>
-                <div class="line long607"></div>
-                <div class="back_to_top move" onclick="moveTop()">
-                    <h4> &#60; BACK TO TOP </h4>
-                </div>             
-                <div class="line long606"></div> 
-                <div class="line down604"></div>
-                <div class="textContact">
-                    <h5>Interested in working together ? </h5>
-                    <h5 class="text1">Send me a message:</h5>
-                    <h5 class="text2">Get in touch:</h5>
-                    <h5 class="text3">Download my Resume:</h5>
-                </div>
-                <form id="myform" action="https://formsubmit.co/amel.1989ab@gmail.com" method="post" autocomplete="off">
-                    <input type="text" placeholder="Name" name="name" value="" class="inputform">
-                    <input type="text" placeholder="Telephone" name="tel" value="" class="inputform" required><br>
-                    <input type="email" placeholder="E-mail" name="email" value="" class="inputform" required><br>
-                    <textarea placeholder="Your message..." rows="4" cols="34" name="message" value="" class="inputform largeinput" required></textarea><br>
-                    <input type="submit" name="submit" value="Send" class="btn btn-outline-secondary" onclick="hundleSubmit(e)">                        
+            <div class="right-container">
+              <div class="right-inner-container">
+                <form method="post" action="https://formsubmit.co/amel.1989ab@gmail.com">
+                  <p class="form-title">Feel free to send me a message in the contact form</p>
+                  <p>* Required</p>
+                  <input type="text" name="name" id="name" placeholder="Name *"  />
+                  <input type="email" name="email" id="name"placeholder="Email *" />
+                  <input type="text" name="company" id="name"placeholder="Company" />
+                  <input type="phone" name="phone" id="name"placeholder="Phone" />
+                  <textarea rows="5" name="message" id="name"placeholder="Message"></textarea>
+                  <button>Submit</button>
                 </form>
-                <div class="contactContainer"> 
-                    <div class="badge b-1" onmouseover="showPhone()" onmouseout="hidePhone()">
-                        <div class="text phone">Call Me</div>
-                    </div>
-                    <div class="badge b-2">
-                        <div class="text"><a href="mailto:amel.1989ab@gmail.com">Mail Me</a></div>
-                    </div>
-                    <div class="badge b-3">
-                        <div class="text"><a href="https://www.linkedin.com/in/amelbougrine/" target="_blank">Add Me</a></div>
-                    </div>
-                    <div class="badge b-4">
-                        <div class="text"><a href="https://github.com/amelbougrine" target="_blank">Add Me</a></div>
-                    </div>
-                </div>
-                <div class="bownload"><a href="./assets/CV_Amel-Bougrine_Front-End_&_UI-UX.pdf" target="_blank" download>Download</a></div>
+              </div>
             </div>
-            <div class="small"><spam class="goldenText">|| </spam> COPYRIGHT 2020 © AMEL BOUGRINE</div>
-          </main>
-        <script src="script.js"></script>
-        <script src="particles.js"></script>
-    </body>
+          </div>
+        </div>
+        
+      </section>
+
+    <!-- </div> -->
+    <div class="mobile">
+      <h4>Mobile version under construction<br> 
+        Please open the site in a large screen.</h4>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script> 
+    <script src="portfolio-anim.js"></script> 
+    <script src="scroll-2.js"></script> 
+    <script src="scroll.js"></script> 
+    <script src="script.js"></script> 
+  </body>
 </html>
