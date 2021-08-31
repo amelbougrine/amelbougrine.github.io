@@ -6,7 +6,7 @@ $(function() {
 	elicit = $('nav a'),
 	items = $('section'),
 	mid, intent;
-	console.log("here");
+
 	// keeping track of mousewheel direction
 	
 	gate.on('wheel', function(e) {
